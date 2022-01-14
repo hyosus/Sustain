@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: consolas;
 }
 .container {
   display: flex;
@@ -399,4 +398,16 @@
       rgba(172, 172, 172, 0.06) 100%
     ),
     linear-gradient(90deg, hsl(18, 0%, 1%), hsl(18, 0%, 1%));
+}
+
+.u-custom-color-3, .u-body.u-custom-color-3, .u-container-style.u-custom-color-3:before, .u-container-layout.u-custom-color-3:before, .u-table-alt-custom-color-3 tr:nth-child(even) {
+  background: rgb(225,225,225,.05);
+	 backdrop-filter: blur(6px);
+	 -webkit-backdrop-filter: blur(6px);
+	 box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
+	 margin: 10vh auto;
+	 overflow: hidden;
+  
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
