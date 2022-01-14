@@ -35377,7 +35377,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-table-alt-custom-color-3 tr:nth-child(even)
         {
             color: #111111;
-            background-color: rgba(255,255,255,0.2);
+            background: rgb(225,225,225,.05);
             backdrop-filter: blur(8px);
             border-top: 1px solid rgba(255, 255, 255, 0.8);
             border-left: 1px solid rgba(255, 255, 255, 0.8);

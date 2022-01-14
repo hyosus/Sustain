@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/5238994.jpg?v=1642005018835");
+  background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,.06) 0%, rgba(148, 148, 148,.06) 50%,rgba(63, 63, 63,.06) 50%, rgba(63, 63, 63,.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,.06) 0%, rgba(66, 66, 66,.06) 50%,rgba(105, 105, 105,.06) 50%, rgba(105, 105, 105,.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,.06) 0%, rgba(123, 123, 123,.06) 50%,rgba(172, 172, 172,.06) 50%, rgba(172, 172, 172,.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
   background-position: 50% 50%;
 }
 
