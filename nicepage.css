@@ -9239,7 +9239,6 @@ ul.u-text li:last-child {
   vertical-align: middle;
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 img.u-image,
 .u-video-poster {
@@ -35376,6 +35375,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-container-layout.u-custom-color-3:before,
         .u-table-alt-custom-color-3 tr:nth-child(even)
         {
+            color: #111111;
             background-color: rgba(255,255,255,0.1);
         }
 
@@ -35972,11 +35972,14 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h2:not(.u-subtitle)
         {
-        font-weight: 400;
-        font-size: 0.140625rem;
+        font-size: 1.875rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-weight: 400;
+        list-icon-spacing: 0.3;
+        list-icon-size: 0.8;
+        font-family: Montserrat,sans-serif;
         }
         h3
         {
@@ -36032,7 +36035,7 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 1.6;
         list-icon-spacing: 0.3;
         list-icon-size: 0.8;
@@ -36160,12 +36163,19 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         color: #ffffff;
         }
+        .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > h2:not(.u-subtitle),
+        .u-gradient > .u-container-layout > h2:not(.u-subtitle),
+        .u-image:not(.u-shading) > .u-container-layout > h2:not(.u-subtitle),
+        h2:not(.u-subtitle)
+        {
+        color: #ebebeb;
+        }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > p:not(.u-text-variant),
         .u-gradient > .u-container-layout > p:not(.u-text-variant),
         .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
         p:not(.u-text-variant)
         {
-        color: #ebebeb;
+        color: #ffffff;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a,
         .u-gradient > .u-container-layout > a,
@@ -36228,9 +36238,13 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         color: #111111;
         }
-        .u-shading p:not(.u-text-variant),.u-overlap-contrast .u-header p:not(.u-text-variant):not(.u-nav-link):not(.u-btn)
+        .u-shading h2:not(.u-subtitle),.u-overlap-contrast .u-header h2:not(.u-subtitle):not(.u-nav-link):not(.u-btn)
         {
         color: #000000;
+        }
+        .u-shading p:not(.u-text-variant),.u-overlap-contrast .u-header p:not(.u-text-variant):not(.u-nav-link):not(.u-btn)
+        {
+        color: #b3b3b3;
         }
         .u-custom-color-1 a,.u-custom-color-5 a,.u-body-color a,.u-palette-1-base a,.u-palette-1-dark-3 a,.u-palette-1-dark-2 a,.u-palette-1-dark-1 a,.u-palette-1 a,.u-palette-1-light-1 a,.u-palette-1-light-2 a,.u-palette-2-base a,.u-palette-2-dark-3 a,.u-palette-2-dark-2 a,.u-palette-2-dark-1 a,.u-palette-2 a,.u-palette-2-light-1 a,.u-palette-3-dark-3 a,.u-palette-3-dark-2 a,.u-palette-3-dark-1 a,.u-palette-4-dark-3 a,.u-palette-4-dark-2 a,.u-palette-4-dark-1 a,.u-palette-5-dark-3 a,.u-palette-5-dark-2 a,.u-palette-5-dark-1 a,.u-grey-40 a,.u-grey-30 a,.u-grey-90 a,.u-grey-80 a,.u-grey-75 a,.u-black a,.u-grey-70 a,.u-grey-60 a,.u-grey-50 a,.u-grey-dark-3 a,.u-grey-dark-2 a,.u-grey-dark-1 a,.u-grey a,.u-shading a,.u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn)
         {
