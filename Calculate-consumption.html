@@ -130,7 +130,15 @@
                       <option value="woodlands">Woodlands</option>
                       <option value="yishun">Yishun</option>
                     </select> .</p>
-            <p class="u-text u-text-body-alt-color u-text-5"> My household consumes on average&nbsp;&lt;input&gt;&nbsp;kWh of electricity per month.</p>
+            <p class="u-text u-text-body-alt-color u-text-5"> My household consumes on average <input
+                      aria-label="Consumption"
+                      style="width: 90px; color: green"
+                      id="Consumption"
+                      name="Consumption"
+                      type="text"
+                      maxlength="5"
+                      placeholder="300.1"
+                    /> kWh of electricity per month.</p>
             <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
               <div class="u-layout">
                 <div class="u-layout-row">
@@ -158,7 +166,14 @@
             </div>
             <h2 class="u-custom-font u-font-montserrat u-text u-text-white u-text-12"><b>Upload your electricity bill</b>
             </h2>
-            <p class="u-text u-text-white u-text-13">Choose file</p>
+            <p class="u-text u-text-white u-text-13">
+              <input
+                      type="file"
+                      id="files"
+                      choose
+                      file
+                    />
+            </p>
             <a href="https://nicepage.com/k/hacker-website-templates" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-font-montserrat u-radius-6 u-text-custom-color-2 u-text-hover-grey-40 u-btn-1">SUBMIT</a>
           </div>
         </div>
