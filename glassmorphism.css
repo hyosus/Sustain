@@ -402,7 +402,7 @@
   }
 }
 
-/* Calculate consumption form */
+/* other page */
 .u-section-1 {
   background-image: radial-gradient(
       circle at 16% 83%,
@@ -413,8 +413,8 @@
     ),
     radial-gradient(
       circle at 68% 87%,
-      rgba(66, 66, 66, 0.06) 0%,
-      rgba(66, 66, 66, 0.06) 50%,
+      rgba(38,234,139, 0.06) 0%,
+      rgba(38,234,139, 0.06) 50%,
       rgba(105, 105, 105, 0.06) 50%,
       rgba(105, 105, 105, 0.06) 100%
     ),

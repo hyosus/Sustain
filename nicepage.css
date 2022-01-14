@@ -9239,6 +9239,7 @@ ul.u-text li:last-child {
   vertical-align: middle;
   background-size: cover;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 img.u-image,
 .u-video-poster {
@@ -36278,10 +36279,6 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 /*end-variables sitestylecss*/
- .u-header {
-  background-image: none;
-}
-
 .u-header .u-sheet-1 {
   min-height: 100px;
 }
