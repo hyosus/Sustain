@@ -69,8 +69,67 @@
             <h1 class="u-text u-text-white u-text-1">Calculate Your Energy Consumption</h1>
             <p class="u-text u-text-2"> Enter your information to find out how your energy consumption compares to your neighbours' and the national average!<span style="font-weight: 400;"></span>
             </p>
-            <p class="u-text u-text-3">Wallet address: &lt;input&gt;</p>
-            <p class="u-text u-text-white u-text-4">I am residing in a &lt;input&gt; in &lt;input&gt; .</p>
+            <p class="u-text u-text-3">Wallet address: <input
+                      id="myAddr"
+                      style="width: 240px; color: green"
+                      placeholder=""
+                    /></p>
+            <p class="u-text u-text-white u-text-4">I am residing in a <select id="Household" style="color: green">
+                      <option value="Rm12">1 or 2-room</option>
+                      <option value="Rm3" selected="selected">3-Room</option>
+                      <option value="Rm4">4-Room</option>
+                      <option value="Rm5E">5-room and Exec HDB</option>
+                      <option value="Pac">Private/Condo</option>
+                      <option value="Ld">Landed</option>
+                    </select>
+              in 
+              <select id="Area" style="color: green">
+                      <option value="amk">Ang Mo Kio</option>
+                      <option value="bedok">Bedok</option>
+                      <option value="bishan">Bishan</option>
+                      <option value="bukitbatok">Bukit Batok</option>
+                      <option value="bukitmerah">Bukit Merah</option>
+                      <option value="bukitpanjang">Bukit Panjang</option>
+                      <option value="bukittimah">Bukit Timah</option>
+                      <option value="new_changi3w">Changi</option>
+                      <option value="cck">Choa Chu Kang</option>
+                      <option value="clementi">Clementi</option>
+                      <option value="new_downtown3w">Downtown</option>
+                      <option value="geylang">Geylang</option>
+                      <option value="hougang">Hougang</option>
+                      <option value="jurongeast">Jurong East</option>
+                      <option value="jurongwest">Jurong West</option>
+                      <option value="kallang">Kallang</option>
+                      <option value="new_mandai3w">Mandai</option>
+                      <option value="marineparade">Marine Parade</option>
+                      <option value="new_museum3w">Museum</option>
+                      <option value="new_newton3w">Newton</option>
+                      <option value="novena">Novena</option>
+                      <option value="new_orchard3w">Orchard</option>
+                      <option value="outram">Outram</option>
+                      <option value="pasirris">Pasir Ris</option>
+                      <option value="new_payalebar3w">Paya Lebar</option>
+                      <option value="punggol">Punggol</option>
+                      <option value="queenstown">Queenstown</option>
+                      <option value="new_rivervalley3w">River Valley</option>
+                      <option value="rochor">Rochor</option>
+                      <option value="new_seletar3w">Seletar</option>
+                      <option value="sengkang">Sengkang</option>
+                      <option value="sembawang">Sembawang</option>
+                      <option value="serangoon">Serangoon</option>
+                      <option value="new_singaporeriver3w">
+                        Singapore River
+                      </option>
+                      <option value="new_southernislands3w">
+                        Southern Islands
+                      </option>
+                      <option value="new_sungeikadut3w">Sungei Kadut</option>
+                      <option value="tampines">Tampines</option>
+                      <option value="tanglin">Tanglin</option>
+                      <option value="toapayoh">Toa Payoh</option>
+                      <option value="woodlands">Woodlands</option>
+                      <option value="yishun">Yishun</option>
+                    </select> .</p>
             <p class="u-text u-text-body-alt-color u-text-5"> My household consumes on average&nbsp;&lt;input&gt;&nbsp;kWh of electricity per month.</p>
             <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
               <div class="u-layout">

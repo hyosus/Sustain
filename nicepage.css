@@ -36022,9 +36022,13 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         p.u-large-text
         {
-        font-size: 0.078125rem;
+        font-size: 1.125rem;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
+        list-icon-spacing: 0.3;
+        list-icon-size: 0.8;
+        font-family: Montserrat,sans-serif;
         }
         p.u-small-text
         {
@@ -36171,6 +36175,13 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         color: #ebebeb;
         }
+        .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > p.u-large-text,
+        .u-gradient > .u-container-layout > p.u-large-text,
+        .u-image:not(.u-shading) > .u-container-layout > p.u-large-text,
+        p.u-large-text
+        {
+        color: #e5e5e5;
+        }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > p:not(.u-text-variant),
         .u-gradient > .u-container-layout > p:not(.u-text-variant),
         .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
@@ -36243,6 +36254,10 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         color: #000000;
         }
+        .u-shading p.u-large-text,.u-overlap-contrast .u-header p.u-large-text:not(.u-nav-link):not(.u-btn)
+        {
+        color: #b3b3b3;
+        }
         .u-shading p:not(.u-text-variant),.u-overlap-contrast .u-header p:not(.u-text-variant):not(.u-nav-link):not(.u-btn)
         {
         color: #b3b3b3;
@@ -36279,6 +36294,10 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 /*end-variables sitestylecss*/
+ .u-header {
+  background-image: none;
+}
+
 .u-header .u-sheet-1 {
   min-height: 100px;
 }
