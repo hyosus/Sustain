@@ -101,7 +101,7 @@
 }
 
 .u-section-1 .u-text-12 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   margin: 63px 0 0;
 }
 
@@ -111,9 +111,9 @@
 
 .u-section-1 .u-btn-1 {
   border-style: none;
-  font-weight: 700;
   font-size: 1.5rem;
   background-image: none;
+  font-weight: 700;
   margin: 30px 0 0;
   padding: 9px 494px 11px;
 }
@@ -212,9 +212,5 @@
 
   .u-section-1 .u-layout-wrap-1 {
     width: 320px;
-  }
-
-  .u-section-1 .u-text-12 {
-    font-size: 1.5rem;
   }
 }
