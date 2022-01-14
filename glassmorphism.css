@@ -432,7 +432,6 @@
 	 backdrop-filter: blur(6px);
 	 -webkit-backdrop-filter: blur(6px);
 	 box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
-	 margin: 10vh auto;
 	 overflow: hidden;
   
   border-top: 1px solid rgba(255, 255, 255, 0.4);
