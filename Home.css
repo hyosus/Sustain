@@ -3,11 +3,11 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 744px;
+  min-height: 749px;
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  margin-top: 100px;
+  margin-top: 105px;
   margin-bottom: 0;
 }
 
@@ -29,7 +29,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 375px;
-  background-image: url("https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526");
+  background-image: url("images/logo-green.png");
   background-position: 50% 50%;
 }
 
