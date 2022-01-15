@@ -55,6 +55,13 @@
   padding: 7px 83px 8px 82px;
 }
 
+.u-section-1 .embed-responsive-1 {
+  height: 178%;
+  width: 178%;
+  left: -39%;
+  top: -39%;
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 651px;
@@ -136,6 +143,13 @@
   .u-section-1 .u-btn-1 {
     margin-right: 290px;
   }
+
+  .u-section-1 .embed-responsive-1 {
+    height: 100%;
+    width: 252%;
+    left: -76%;
+    top: 0%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -159,6 +173,11 @@
     margin-right: 90px;
     padding-right: 79px;
     padding-left: 77px;
+  }
+
+  .u-section-1 .embed-responsive-1 {
+    width: 314%;
+    left: -107%;
   }
 }
 

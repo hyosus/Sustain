@@ -36313,8 +36313,14 @@ a.u-link.u-text-hover-grey-90:hover {
   height: 100%;
 }
 
+.u-header .u-btn-1 {
+  background-image: none;
+  border-style: none;
+  margin: -55px 0 0 auto;
+}
+
 .u-header .u-menu-1 {
-  margin: -51px 0 0 auto;
+  margin: -42px auto 0;
 }
 
 .u-header .u-nav-1 {
@@ -36331,9 +36337,13 @@ a.u-link.u-text-hover-grey-90:hover {
     min-height: 100px;
   }
 
+  .u-header .u-btn-1 {
+    margin-top: -55px;
+  }
+
   .u-header .u-menu-1 {
     width: auto;
-    margin-top: -51px;
+    margin-top: -42px;
   }
 }
 
