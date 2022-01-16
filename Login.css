@@ -76,18 +76,10 @@ input.mdl-button[type="submit"] {
   background-color: rgba(158, 158, 158, 0.4);
 }
 .mdl-button--raised.mdl-button--colored {
-  background: #3f51b5;
-  color: #fff;
+  background: #25ea8b;
+  color: #101010;
 }
-.mdl-button--raised.mdl-button--colored:hover {
-  background-color: #3f51b5;
-}
-.mdl-button--raised.mdl-button--colored:active {
-  background-color: #3f51b5;
-}
-.mdl-button--raised.mdl-button--colored:focus:not(:active) {
-  background-color: #3f51b5;
-}
+
 .mdl-button--raised.mdl-button--colored .mdl-ripple {
   background: #fff;
 }
@@ -196,7 +188,7 @@ input.mdl-button[type="submit"] {
   background-color: transparent;
 }
 .mdl-button--primary.mdl-button--primary {
-  color: #3f51b5;
+  color: #25ea8b;
 }
 .mdl-button--primary.mdl-button--primary .mdl-ripple {
   background: #fff;
@@ -204,7 +196,7 @@ input.mdl-button[type="submit"] {
 .mdl-button--primary.mdl-button--primary.mdl-button--fab,
 .mdl-button--primary.mdl-button--primary.mdl-button--raised {
   color: #fff;
-  background-color: #3f51b5;
+  background-color: #25ea8b;
 }
 .mdl-button--accent.mdl-button--accent {
   color: #ff4081;
@@ -1005,13 +997,13 @@ dialog.fixed {
 }
 .firebaseui-subtitle,
 .firebaseui-title {
-  color: rgba(0, 0, 0, 0.87);
+  color: #ebebeb !important;
   direction: ltr;
   font-size: 25px !important;
-  font-weight: 500;
-  line-height: 24px;
+  font-weight: 500 !important;
+  line-height: 24px !important;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   text-align: left;
 }
 .firebaseui-title {
@@ -1069,7 +1061,7 @@ dialog.fixed {
 .firebaseui-input,
 .firebaseui-input-invalid {
   border-radius: 0;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ebebeb;
   direction: ltr;
   font-size: 16px;
   width: 100%;
@@ -1089,7 +1081,7 @@ input.firebaseui-input-invalid {
   border-color: #999999;
 }
 .firebaseui-textfield.mdl-textfield .firebaseui-label::after {
-  background-color: #3f51b5;
+  background-color: #ebebeb !important;
 }
 .firebaseui-textfield-invalid.mdl-textfield .firebaseui-input {
   border-color: #dd2c00;
