@@ -14,7 +14,8 @@
     <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
+    <link rel="stylesheet" href="glassmorphism.css" media="screen">
+
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -66,33 +67,100 @@
     <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-93a2">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-align-left u-container-style u-custom-color-3 u-expanded-width u-group u-radius-20 u-shape-round u-group-1">
-          <div class="u-container-layout u-container-layout-1">
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
             <h1 class="u-text u-text-white u-text-1">Calculate Your Energy Consumption</h1>
-            <p class="u-text u-text-custom-color-2 u-text-2"> Enter your information to find out how your energy consumption compares to your neighbours' and the national average!<span style="font-weight: 400;"></span>
+            <p class="u-text u-text-2"> Enter your information to find out how your energy consumption compares to your neighbours' and the national average!<span style="font-weight: 400;"></span>
             </p>
-            <p class="u-text u-text-custom-color-2 u-text-3">Wallet address: &lt;input&gt;</p>
-            <p class="u-text u-text-custom-color-2 u-text-4">I am residing in a &lt;input&gt; in &lt;input&gt; .</p>
-            <p class="u-text u-text-custom-color-2 u-text-5"> My household consumes on average&nbsp;&lt;input&gt;&nbsp;kWh of electricity per month.</p>
+            <p class="u-text u-text-3">Wallet address: <input
+                      id="myAddr"
+                      style="width: 240px; color: green"
+                      placeholder=""
+                    /></p>
+            <p class="u-text u-text-white u-text-4">I am residing in a <select id="Household" style="color: green">
+                      <option value="Rm12">1 or 2-room</option>
+                      <option value="Rm3" selected="selected">3-Room</option>
+                      <option value="Rm4">4-Room</option>
+                      <option value="Rm5E">5-room and Exec HDB</option>
+                      <option value="Pac">Private/Condo</option>
+                      <option value="Ld">Landed</option>
+                    </select>
+              in 
+              <select id="Area" style="color: green">
+                      <option value="amk">Ang Mo Kio</option>
+                      <option value="bedok">Bedok</option>
+                      <option value="bishan">Bishan</option>
+                      <option value="bukitbatok">Bukit Batok</option>
+                      <option value="bukitmerah">Bukit Merah</option>
+                      <option value="bukitpanjang">Bukit Panjang</option>
+                      <option value="bukittimah">Bukit Timah</option>
+                      <option value="new_changi3w">Changi</option>
+                      <option value="cck">Choa Chu Kang</option>
+                      <option value="clementi">Clementi</option>
+                      <option value="new_downtown3w">Downtown</option>
+                      <option value="geylang">Geylang</option>
+                      <option value="hougang">Hougang</option>
+                      <option value="jurongeast">Jurong East</option>
+                      <option value="jurongwest">Jurong West</option>
+                      <option value="kallang">Kallang</option>
+                      <option value="new_mandai3w">Mandai</option>
+                      <option value="marineparade">Marine Parade</option>
+                      <option value="new_museum3w">Museum</option>
+                      <option value="new_newton3w">Newton</option>
+                      <option value="novena">Novena</option>
+                      <option value="new_orchard3w">Orchard</option>
+                      <option value="outram">Outram</option>
+                      <option value="pasirris">Pasir Ris</option>
+                      <option value="new_payalebar3w">Paya Lebar</option>
+                      <option value="punggol">Punggol</option>
+                      <option value="queenstown">Queenstown</option>
+                      <option value="new_rivervalley3w">River Valley</option>
+                      <option value="rochor">Rochor</option>
+                      <option value="new_seletar3w">Seletar</option>
+                      <option value="sengkang">Sengkang</option>
+                      <option value="sembawang">Sembawang</option>
+                      <option value="serangoon">Serangoon</option>
+                      <option value="new_singaporeriver3w">
+                        Singapore River
+                      </option>
+                      <option value="new_southernislands3w">
+                        Southern Islands
+                      </option>
+                      <option value="new_sungeikadut3w">Sungei Kadut</option>
+                      <option value="tampines">Tampines</option>
+                      <option value="tanglin">Tanglin</option>
+                      <option value="toapayoh">Toa Payoh</option>
+                      <option value="woodlands">Woodlands</option>
+                      <option value="yishun">Yishun</option>
+                    </select> .</p>
+            <p class="u-text u-text-body-alt-color u-text-5"> My household consumes on average <input
+                      aria-label="Consumption"
+                      style="width: 90px; color: green"
+                      id="Consumption"
+                      name="Consumption"
+                      type="text"
+                      maxlength="5"
+                      placeholder="300.1"
+                    /> kWh of electricity per month.</p>
             <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
               <div class="u-layout">
                 <div class="u-layout-row">
                   <div class="u-container-style u-custom-color-5 u-layout-cell u-opacity u-opacity-40 u-radius-8 u-shape-round u-size-20 u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-2">
                       <p class="u-align-center u-text u-text-white u-text-6">National Average</p>
-                      <p class="u-align-center u-text u-text-custom-color-2 u-text-7">kWh</p>
+                      <p class="u-align-center u-text u-text-white u-text-7">kWh</p>
                     </div>
                   </div>
                   <div class="u-container-style u-custom-color-5 u-layout-cell u-opacity u-opacity-40 u-radius-8 u-shape-round u-size-20 u-layout-cell-2">
                     <div class="u-container-layout u-valign-middle u-container-layout-3">
                       <p class="u-align-center u-text u-text-white u-text-8">You saved</p>
-                      <p class="u-align-center u-text u-text-custom-color-2 u-text-9">kWh</p>
+                      <p class="u-align-center u-text u-text-white u-text-9">kWh</p>
                     </div>
                   </div>
                   <div class="u-container-style u-custom-color-5 u-layout-cell u-opacity u-opacity-40 u-radius-8 u-shape-round u-size-20 u-layout-cell-3">
                     <div class="u-container-layout u-valign-middle u-container-layout-4">
                       <p class="u-align-center u-text u-text-white u-text-10"><b>Rewarded with </b>
                       </p>
-                      <p class="u-align-center u-text u-text-custom-color-2 u-text-11">SUS</p>
+                      <p class="u-align-center u-text u-text-white u-text-11">SUS</p>
                     </div>
                   </div>
                 </div>
@@ -100,7 +168,14 @@
             </div>
             <h2 class="u-custom-font u-font-montserrat u-text u-text-white u-text-12"><b>Upload your electricity bill</b>
             </h2>
-            <p class="u-text u-text-white u-text-13">Choose file</p>
+            <p class="u-text u-text-white u-text-13">
+              <input
+                      type="file"
+                      id="files"
+                      choose
+                      file
+                    />
+            </p>
             <a href="https://nicepage.com/k/hacker-website-templates" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-font-montserrat u-radius-6 u-text-custom-color-2 u-text-hover-grey-40 u-btn-1">SUBMIT</a>
           </div>
         </div>

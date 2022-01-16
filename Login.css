@@ -19,11 +19,11 @@
   position: relative;
   height: 36px;
   margin: 0;
-  min-width: 64px;
+  min-width: 80px;
   padding: 0 16px;
   display: inline-block;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
@@ -956,15 +956,20 @@ dialog.fixed {
   transform: translate(0, -50%);
 }
 .firebaseui-container {
-  background-color: #fff;
+  background: rgb(225,225,225,.05);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 10px 0 rgb(0 0 0 / 6%);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px !important;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   color: rgba(0, 0, 0, 0.87);
   direction: ltr;
-  font: 16px Roboto, arial, sans-serif;
   margin: 0 auto;
-  max-width: 360px;
+  max-width: 600px;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -1119,9 +1124,7 @@ input.firebaseui-input-invalid {
   margin-top: 0;
   text-align: left;
 }
-.firebaseui-page-provider-sign-in {
-  background: inherit;
-}
+
 .firebaseui-idp-list {
   list-style: none;
   margin: 1em 0;
