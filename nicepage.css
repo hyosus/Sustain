@@ -35962,7 +35962,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h1:not(.u-title)
         {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -36163,10 +36163,9 @@ a.u-link.u-text-hover-grey-90:hover {
         /** color-rules **/
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > h1:not(.u-title),
         .u-gradient > .u-container-layout > h1:not(.u-title),
-        .u-image:not(.u-shading) > .u-container-layout > h1:not(.u-title),
-        h1:not(.u-title)
+        .u-image:not(.u-shading) > .u-container-layout > h1:not(.u-title)
         {
-        color: #ebebeb;
+        color: #ffffff;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > h2:not(.u-subtitle),
         .u-gradient > .u-container-layout > h2:not(.u-subtitle),
@@ -36184,8 +36183,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > p:not(.u-text-variant),
         .u-gradient > .u-container-layout > p:not(.u-text-variant),
-        .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
-        p:not(.u-text-variant)
+        .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant)
         {
         color: #ffffff;
         }
@@ -36299,12 +36297,12 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 100px;
+  min-height: 116px;
 }
 
 .u-header .u-image-1 {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   margin: 18px auto 0 0;
 }
 
@@ -36316,11 +36314,13 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-btn-1 {
   background-image: none;
   border-style: none;
-  margin: -55px 0 0 auto;
+  font-size: 1.125rem;
+  margin: -63px 11px 0 auto;
+  padding: 8px 30px 9px;
 }
 
 .u-header .u-menu-1 {
-  margin: -42px auto 0;
+  margin: -42px auto 4px;
 }
 
 .u-header .u-nav-1 {
@@ -36333,12 +36333,9 @@ a.u-link.u-text-hover-grey-90:hover {
   letter-spacing: 0px;
 }
 @media (max-width: 1199px) {
-  .u-header .u-sheet-1 {
-    min-height: 100px;
-  }
-
   .u-header .u-btn-1 {
-    margin-top: -55px;
+    margin-top: -63px;
+    margin-right: 0;
   }
 
   .u-header .u-menu-1 {
