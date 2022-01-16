@@ -35962,7 +35962,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h1:not(.u-title)
         {
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -36163,7 +36163,8 @@ a.u-link.u-text-hover-grey-90:hover {
         /** color-rules **/
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > h1:not(.u-title),
         .u-gradient > .u-container-layout > h1:not(.u-title),
-        .u-image:not(.u-shading) > .u-container-layout > h1:not(.u-title)
+        .u-image:not(.u-shading) > .u-container-layout > h1:not(.u-title),
+        h1:not(.u-title)
         {
         color: #ffffff;
         }
@@ -36183,7 +36184,8 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > p:not(.u-text-variant),
         .u-gradient > .u-container-layout > p:not(.u-text-variant),
-        .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant)
+        .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
+        p:not(.u-text-variant)
         {
         color: #ffffff;
         }
