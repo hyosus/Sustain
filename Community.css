@@ -1,17 +1,19 @@
+ .u-section-1 {
+  background-image: none;
+}
+
 .u-section-1 .u-sheet-1 {
-  min-height: 844px;
+  min-height: 939px;
 }
 
 .u-section-1 .u-text-1 {
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
   font-size: 3.75rem;
+  margin: 120px auto 0;
 }
 
 .u-section-1 .u-layout-wrap-1 {
   width: 600px;
-  margin: 45px auto 30px;
+  margin: 30px auto 40px;
 }
 
 .u-section-1 .u-layout-cell-1 {
@@ -26,7 +28,7 @@
   font-weight: 700;
   font-size: 1.875rem;
   text-align: left;
-  margin: 0 auto 0 0;
+  margin: 1px auto 0 0;
 }
 
 .u-section-1 .u-line-1 {
@@ -34,7 +36,7 @@
   height: 3px;
   transform-origin: left center 0px;
   text-align: left;
-  margin: 10px auto 0 0;
+  margin: 9px auto 0 0;
 }
 
 .u-section-1 .u-group-1 {
