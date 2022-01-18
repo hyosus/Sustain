@@ -430,10 +430,9 @@
 
 .u-custom-color-3, .u-body.u-custom-color-3, .u-container-style.u-custom-color-3:before, .u-container-layout.u-custom-color-3:before, .u-table-alt-custom-color-3 tr:nth-child(even) {
   background: rgb(225,225,225,.05);
-	 backdrop-filter: blur(6px);
-	 -webkit-backdrop-filter: blur(6px);
-	 box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
-	 overflow: hidden;
+	backdrop-filter: blur(6px);
+	box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
+	overflow: hidden;
   
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
@@ -441,7 +440,16 @@
 
 
 /* Community */
-div.u-form>form>input:hover{
+.u-input:hover{
 		transition: 400ms;
-		border-bottom: 1px solid var(--font-color);
+		border-bottom: 1px solid;
+}
+
+.u-section-1 .u-form-1 {
+	backdrop-filter: blur(6px);
+	box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
+	overflow: hidden;
+  
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
