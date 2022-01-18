@@ -11,6 +11,13 @@
 <link rel="stylesheet" href="Get-Token.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+    <script>
+        var test = true; // False if contracts are on Mainnet
+        var contractAddressSale = '0x83FA2888d7470596D67d2f9563Cc98D819cb0111';
+        var contractAddressToken = '0x6e8f873036af67d607A2D6421b44Ac8E61230D11';
+    </script>
+    
     <meta name="generator" content="Nicepage 4.3.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
@@ -81,7 +88,8 @@
                           <input type="hidden" id="pageId" name="pageId" value="418712028">
                           <div class="u-form-group">
                             <label for="name-d64b" class="u-form-control-hidden u-label"></label>
-                            <input type="text" id="name-d64b" name="amount" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white" required="required">
+                            <input type="number" id="buyQty" value="1" name="amount" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white" required="required"
+                                   style="text-align: center;">
                           </div>
                           <div class="u-align-left u-form-group u-form-submit">
                             <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius-6 u-btn-1">BUY</a>
@@ -92,7 +100,7 @@
                           <input type="hidden" value="" name="recaptchaResponse">
                         </form>
                       </div>
-                      <p class="u-align-center u-text u-text-3">My token balance:&nbsp;</p>
+                      <p class="u-align-center u-text u-text-3">My token balance: <span id="myTokens">0</span></p>
                       <p class="u-align-center u-text u-text-4">Not enough ETH? <span style="text-decoration: underline !important;">
                           <a href="Get-Token.html#sec-1077" data-page-id="418712028" class="u-active-none u-border-none u-btn u-button-link u-button-style u-custom-font u-font-montserrat u-hover-none u-none u-text-custom-color-2 u-btn-2">Swap Token</a>
                         </span>
