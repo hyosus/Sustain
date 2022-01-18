@@ -438,3 +438,10 @@
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+
+/* Community */
+div.u-form>form>input:hover{
+		transition: 400ms;
+		border-bottom: 1px solid var(--font-color);
+}

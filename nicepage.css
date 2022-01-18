@@ -4806,12 +4806,11 @@ a {
   display: block;
   width: 100%;
   padding: 10px 12px;
-  background-image: none;
+  background: rgb(0,0,0,.1);
   background-clip: padding-box;
   border: none;
   border-radius: 3px;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  background-color: transparent;
   color: inherit;
   height: auto;
 }
