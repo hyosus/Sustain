@@ -7,8 +7,8 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 170.2;
     if (y <= 0) {
-      alert("Do not meet the requirement");
-      document.getElementById("earned").value = " 0 SUS";
+      alert("Did not meet the requirement");
+      document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
@@ -21,7 +21,7 @@ function calc_saved(value) {
     nA = 274.2;
     if (y <= 0) {
       alert("Did not meet the requirement");
-      document.getElementById("earned").value = " 0 SUS";
+      document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
@@ -34,7 +34,7 @@ function calc_saved(value) {
     nA = 375.5;
     if (y <= 0) {
       alert("Did not meet the requirement");
-      document.getElementById("earned").value = " 0 SUS";
+      document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
@@ -46,7 +46,7 @@ function calc_saved(value) {
     nA = 456;
     if (y <= 0) {
       alert("Did not meet the requirement");
-      document.getElementById("earned").value = " 0 SUS";
+      document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
@@ -58,7 +58,7 @@ function calc_saved(value) {
     nA = 538.7;
     if (y <= 0) {
       alert("Did not meet the requirement");
-      document.getElementById("earned").value = " 0 SUS";
+      document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
@@ -70,7 +70,7 @@ function calc_saved(value) {
     nA = 1209.1;
     if (y <= 0) {
       alert("Did not meet the requirement");
-      document.getElementById("earned").value = " 0 SUS";
+      document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
