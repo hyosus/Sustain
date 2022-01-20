@@ -212,7 +212,7 @@
               >
               <input
                 type="text"
-                id="name-6cdc"
+                id="nickname"
                 name="name"
                 class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2"
                 required=""
@@ -226,7 +226,7 @@
               >
               <input
                 type="text"
-                id="email-6cdc"
+                id="wallet"
                 name="wallet"
                 class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2"
                 required=""
@@ -241,7 +241,7 @@
               <input
                 type="text"
                 placeholder=""
-                id="text-4959"
+                id="topic"
                 name="text"
                 class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2"
               />
@@ -255,7 +255,7 @@
                 placeholder="Enter your message"
                 rows="5"
                 cols="50"
-                id="message-6cdc"
+                id="message"
                 name="message"
                 class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2"
                 required=""
@@ -267,20 +267,24 @@
                 class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius-5 u-btn-1"
                 >Submit</a
               >
-              <input
+              <button
                 type="submit"
                 value="submit"
                 class="u-form-control-hidden"
               />
             </div>
           </form>
+          <div class="error-message">
+              <p>Error! Please fill in all the fields.</p>
+              <span class="close position-right">&times;</span>
+            </div>
         </div>
-      </div>
-    </section>
         <section class="message-board">
     <div id="load-data"></div>
     </section>
-    <main class="container"></main>
-    <section class="message-board"></section>
+        <main class="container"></main>
+  <section class="message-board"></section>
+      </div>
+    </section>
   </body>
 </html>
