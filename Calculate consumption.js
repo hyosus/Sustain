@@ -111,3 +111,100 @@ function calc_saved(value) {
 
 }
 
+
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBIVgnaw83MSmf7iWwq58ih9E2r3lA8ydY",
+  authDomain: "sustain-f115c.firebaseapp.com",
+  databaseURL: "https://sustain-f115c-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "sustain-f115c",
+  storageBucket: "sustain-f115c.appspot.com",
+  messagingSenderId: "748836738977",
+  appId: "1:748836738977:web:7751a91d2a632e0a271de0",
+  measurementId: "G-ZFH9D225R1"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore();
+
+//Variable to access database collection
+const db = firestore.collection("FormData");
+
+//Get Submit Form
+let submitButton = document.getElementById("submit");
+
+//Get Files
+var files = [];
+document.getElementById("files").addEventListener("change", function(e) {
+  files = e.target.files;
+  for (let i = 0; i < files.length; i++) {
+    console.log(files[i]);
+  }
+});
+document.getElementById("submit").addEventListener("click", function() {
+  //checks if files are selected
+  if (files.length != 0) {
+    //Loops through all the selected files
+    for (let i = 0; i < files.length; i++) {
+      //create a storage reference
+      var storage = firebase.storage().ref(files[i].name);
+
+      //upload file
+      var upload = storage.put(files[i]);
+
+      //update progress bar
+      upload.on(
+        "state_changed",
+        function progress(snapshot) {
+          var percentage =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          document.getElementById("progress").value = percentage;
+        },
+
+        function error() {
+          alert("error uploading file");
+        },
+
+        function complete() {
+          document.getElementById(
+            "uploading"
+          ).innerHTML += `${files[i].name} uploaded <br />`;
+        }
+      );
+    }
+  } else {
+    alert("No file chosen");
+  }
+});
+
+//Create Event Listener To Allow Form Submission
+submitButton.addEventListener("click", e => {
+  //Prevent Default Form Submission Behavior
+  e.preventDefault();
+
+  //Get Form Values
+  let Waddress = document.getElementById("myAddr").value;
+  let Household = document.getElementById("Household").value;
+  let Consumption = document.getElementById("Consumption").value;
+  let Area = document.getElementById("Area").value;
+  
+  //Save Form Data To Firebase
+  db.doc()
+    .set({
+      myAddr: Waddress,
+      Household: Household,
+      Consumption: Consumption,
+      Area: Area
+    })
+    .then(() => {
+      console.log("Data saved");
+    })
+    .catch(error => {
+      console.log(error);
+    });
+
+  //alert
+  alert("Your Form Has Been Submitted Successfully");
+});
+

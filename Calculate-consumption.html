@@ -9,6 +9,10 @@
     <title>Calculate-consumption</title>
     <link rel="stylesheet" href="nicepage.css" media="screen" />
     <link rel="stylesheet" href="Calculate-consumption.css" media="screen" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
     <script
       class="u-script"
       type="text/javascript"
@@ -202,6 +206,7 @@
                 style="font-weight: 400"
               ></span>
             </p>
+            <form>
             <p class="u-text u-text-3">
               Wallet address:
               <input
@@ -363,10 +368,11 @@
             <p class="u-text u-text-white u-text-13">
               <input type="file" id="files" choose file />
             </p>
-            <a
+            <button
               class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-font-montserrat u-radius-6 u-text-custom-color-2 u-text-hover-grey-40 u-btn-1"
-              >SUBMIT</a
-            >
+              id="submit"
+              >SUBMIT</button>
+          </form>
           </div>
         </div>
       </div>
