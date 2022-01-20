@@ -11,11 +11,14 @@
 <link rel="stylesheet" href="Community.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="Community.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.3.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="glassmorphism.css">
-
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -75,7 +78,7 @@
             </div>
             <div class="u-form-email u-form-group">
               <label for="email-6cdc" class="u-label u-text-custom-color-2 u-label-2">Wallet Address</label>
-              <input type="email" id="email-6cdc" name="wallet" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required="">
+              <input type="text" id="email-6cdc" name="wallet" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required="">
             </div>
             <div class="u-form-group u-form-group-3">
               <label for="text-4959" class="u-label u-text-custom-color-2 u-label-3">Topic</label>
@@ -93,10 +96,12 @@
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
           </form>
+    <section class="message-board">
+    <div id="load-data"></div>
+    </section>
         </div>
       </div>
     </section>
-    
     
     
   </body>
