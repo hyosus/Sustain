@@ -9,9 +9,11 @@
     <title>Community</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Community.css" media="screen">
+    
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="Community.js" defer=""></script>
+    
     <meta name="generator" content="Nicepage 4.3.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
@@ -74,35 +76,31 @@
           <form action="#" method="POST" class="u-clearfix u-form-spacing-22 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 20px;">
             <div class="u-form-group u-form-name">
               <label for="name-6cdc" class="u-label u-text-custom-color-2 u-label-1">Name / Nickname</label>
-              <input type="text" id="name-6cdc" name="name" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required="">
+              <input type="text" id="nickname" name="name" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required="">
             </div>
             <div class="u-form-email u-form-group">
               <label for="email-6cdc" class="u-label u-text-custom-color-2 u-label-2">Wallet Address</label>
-              <input type="text" id="email-6cdc" name="wallet" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required="">
+              <input type="text" id="wallet" name="wallet" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required="">
             </div>
             <div class="u-form-group u-form-group-3">
               <label for="text-4959" class="u-label u-text-custom-color-2 u-label-3">Topic</label>
-              <input type="text" placeholder="" id="text-4959" name="text" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2">
+              <input type="text" placeholder="" id="topic" name="text" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2">
             </div>
             <div class="u-form-group u-form-message">
               <label for="message-6cdc" class="u-form-control-hidden u-label u-text-custom-color-2 u-label-4"></label>
-              <textarea placeholder="Enter your message" rows="5" cols="50" id="message-6cdc" name="message" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required=""></textarea>
+              <textarea placeholder="Enter your message" rows="5" cols="50" id="message" name="message" class="u-border-1 u-border-black u-border-no-left u-border-no-right u-border-no-top u-custom-color-4 u-input u-input-rectangle u-radius-5 u-text-custom-color-2" required=""></textarea>
             </div>
             <div class="u-align-left u-form-group u-form-submit">
               <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius-5 u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+              <button type="submit" value="submit" class="u-form-control-hidden"></button>
             </div>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
           </form>
-    <section class="message-board">
-    <div id="load-data"></div>
-    </section>
-        </div>
-      </div>
-    </section>
     
-    
+          <section class="message-board">
+          <div id="load-data"></div>
+          </section>
   </body>
 </html>
