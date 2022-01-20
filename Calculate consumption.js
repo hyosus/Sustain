@@ -1,3 +1,26 @@
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.close');
+
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+  modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
 
 function calc_saved(value) {
   var average = document.getElementById("Household").value;
@@ -20,7 +43,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 274.2;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      openModal();
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
