@@ -11,7 +11,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0 SUS";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2) + " SUS";
+        y.toFixed(2);
     }
   }
 
@@ -24,7 +24,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0 SUS";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2) + " SUS";
+        y.toFixed(2);
     }
   }
 
@@ -37,7 +37,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0 SUS";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2) + " SUS";
+        y.toFixed(2);
     }
   }
   if (average === "Rm5E") {
@@ -49,7 +49,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0 SUS";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2) + " SUS";
+        y.toFixed(2);
     }
   }
   if (average === "Pac") {
@@ -61,7 +61,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0 SUS";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2) + " SUS";
+        y.toFixed(2);
     }
   }
   if (average === "Ld") {
@@ -73,7 +73,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0 SUS";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2) + " SUS";
+        y.toFixed(2);
     }
   }
 
