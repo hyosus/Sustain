@@ -43,7 +43,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 274.2;
     if (y <= 0) {
-      openModal();
+      alert("Did not meet the requirement");
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
