@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "firebase": "^9.6.3",
+    "@firebase/firestore": "^3.4.3",
+    "tesseract": "^0.0.3",
+    "node-tesseract": "^0.2.7"
+  },
+  "scripts": {
+    "start": "ws --port 3000 --log.format combined --directory . --blacklist '/.env' '/.data' '/.git'"
+  }
+}
