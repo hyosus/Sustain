@@ -9,6 +9,8 @@
     <title>Calculate-consumption</title>
     <link rel="stylesheet" href="nicepage.css" media="screen" />
     <link rel="stylesheet" href="Calculate-consumption.css" media="screen" />
+    <link rel="stylesheet" href="modal.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
@@ -377,6 +379,17 @@
         </div>
       </div>
     </section>
+                    <!-- MODAL -->
+    <div id="modal">
+        <div class="content">
+            <h2>Do not meet requirement</h2>
+            <p>Your household consume more energy than average</p>
+                <!-- <div class="inputBox"><input type="submit" value="Close" class="btn"></div> -->
+        </div>
+        <a class="fa fa-close" onclick="modalToggle();"></a>
+    </div>
+                
+                <!-- END -->
 
     <section class="u-backlink u-clearfix u-grey-80">
       <a

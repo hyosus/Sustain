@@ -63,10 +63,9 @@
 
 .u-section-2 .u-group-1 {
   min-height: 402px;
-  margin-top: 61px;
+  margin-top: 41px;
   margin-bottom: 60px;
   height: auto;
-  width: 1140px;
 }
 
 .u-section-2 .u-container-layout-1 {
@@ -75,7 +74,7 @@
 
 .u-section-2 .u-group-2 {
   min-height: 32px;
-  margin-top: 7px;
+  margin-top: 0;
   margin-bottom: 0;
   height: auto;
 }
@@ -90,12 +89,19 @@
   line-height: 1;
   font-weight: 700;
   text-align: left;
-  margin: -31px 585px 0 0;
+  margin: -32px 585px 0 0;
+}
+
+.u-section-2 .u-line-1 {
+  height: 3px;
+  margin-top: 17px;
+  margin-bottom: 0;
+  transform-origin: left center 0px;
 }
 
 .u-section-2 .u-text-3 {
   font-size: 1.25rem;
-  margin: 20px auto 0 0;
+  margin: 24px 1024px 0 0;
 }
 
 .u-section-2 .u-text-4 {
@@ -103,16 +109,16 @@
 }
 
 .u-section-2 .u-text-5 {
-  margin: 186px 0 0;
+  margin: 169px 0 0;
 }
 
 @media (max-width: 1199px) {
   .u-section-2 .u-group-1 {
-    width: 940px;
     height: auto;
   }
 
   .u-section-2 .u-group-2 {
+    margin-top: -216px;
     height: auto;
   }
 
@@ -124,13 +130,24 @@
   .u-section-2 .u-text-2 {
     margin-right: 385px;
   }
+
+  .u-section-2 .u-text-3 {
+    width: 56px;
+    margin-top: 40px;
+    margin-right: 824px;
+  }
+
+  .u-section-2 .u-text-4 {
+    width: 880px;
+    margin-top: -272px;
+  }
+
+  .u-section-2 .u-text-5 {
+    margin-top: 176px;
+  }
 }
 
 @media (max-width: 991px) {
-  .u-section-2 .u-group-1 {
-    width: 720px;
-  }
-
   .u-section-2 .u-text-1 {
     margin-left: 137px;
   }
@@ -138,13 +155,17 @@
   .u-section-2 .u-text-2 {
     margin-right: 165px;
   }
+
+  .u-section-2 .u-text-3 {
+    margin-right: 604px;
+  }
+
+  .u-section-2 .u-text-4 {
+    width: 660px;
+  }
 }
 
 @media (max-width: 767px) {
-  .u-section-2 .u-group-1 {
-    width: 540px;
-  }
-
   .u-section-2 .u-container-layout-1 {
     padding-left: 10px;
     padding-right: 10px;
@@ -157,15 +178,29 @@
   .u-section-2 .u-text-2 {
     margin-right: 25px;
   }
+
+  .u-section-2 .u-text-3 {
+    margin-right: 464px;
+  }
+
+  .u-section-2 .u-text-4 {
+    width: 520px;
+  }
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-group-1 {
-    width: 340px;
-  }
-
   .u-section-2 .u-text-2 {
     font-size: 1.5rem;
     margin-right: 0;
+  }
+
+  .u-section-2 .u-text-3 {
+    margin-top: 72px;
+    margin-right: 264px;
+  }
+
+  .u-section-2 .u-text-4 {
+    width: 320px;
+    margin-top: -304px;
   }
 }

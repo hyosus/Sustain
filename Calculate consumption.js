@@ -5,6 +5,13 @@ const closeBtn = document.querySelector('.close');
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 
+// Modal
+function modalToggle(){
+  const modal = document.getElementById('modal');
+  modal.classList.toggle('active')
+}
+                  
+
 // Open
 function openModal() {
   modal.style.display = 'block';
@@ -30,7 +37,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 170.2;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
@@ -43,7 +50,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 274.2;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
@@ -56,7 +63,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 375.5;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
@@ -68,7 +75,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 456;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
@@ -80,7 +87,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 538.7;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
@@ -92,7 +99,7 @@ function calc_saved(value) {
     y = x * 0.025;
     nA = 1209.1;
     if (y <= 0) {
-      alert("Did not meet the requirement");
+      modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =

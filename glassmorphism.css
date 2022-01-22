@@ -445,7 +445,7 @@
 		border-bottom: 1px solid;
 }
 
-#sec-eb2a .u-form-1 {
+#sec-eb2a .u-form-1{
   background: rgb(225,225,225,.05);
 	backdrop-filter: blur(6px);
 	box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
@@ -453,4 +453,11 @@
   
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.u-grey-50{
+  background: rgb(225,225,225,.05);
+	backdrop-filter: blur(6px);
+	box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
+	overflow: hidden;
 }

@@ -120,6 +120,7 @@ db.collection("messages")
                 <h3 class="u-text u-text-2">Posted By:&nbsp; ${messages[i].nickname}</h3>
               </div>
             </div>
+            <div class="u-border-2 u-border-custom-color-2 u-expanded-width u-line u-line-horizontal u-line-1"></div>
             <h4 class="u-text u-text-default u-text-3"><b>${messages[i].topic}</b>
             </h4>
             <p class="u-text u-text-4">${messages[i].message}</p>
