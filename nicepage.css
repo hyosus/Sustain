@@ -16,7 +16,7 @@
   height: 1px;
   padding: 0;
   margin: -1px;
-  overflow: hidden;
+  overflow: hidden 
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
@@ -34482,7 +34482,6 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-table-alt-custom-color-1 tr:nth-child(even)
         {
             color: #ffffff;
-            background-color: #101010;
         }
 
         .u-button-style.u-custom-color-1,
