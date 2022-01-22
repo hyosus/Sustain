@@ -110,38 +110,15 @@ db.collection("messages")
     for (let i = 0; i < messages.length; i++) {
       const createdOn = new Date(messages[i].date.seconds * 1000);
       dataArea.innerHTML += `
-      <div
-          class="u-container-style u-grey-75 u-group u-radius-33 u-shape-round u-group-2"
-        >
-          <div class="u-container-layout u-container-layout-2">
-            <p class="u-custom-font u-font-courier-new u-text u-text-6">
-              Posted By :&nbsp;
-            </p>
-            <div
-              class="u-container-style u-group u-palette-1-dark-3 u-radius-17 u-shape-round u-group-3"
-            >
-              <div class="u-container-layout u-container-layout-3">
-                <p class="u-custom-font u-font-courier-new u-text u-text-7">
-                  ${messages[i].nickname}
-                </p>
-              </div>
-            </div>
-            <h3 class="u-text u-text-8">${messages[i].topic}</h3>
-            <p class="u-text u-text-9">
-            ${messages[i].message}
-            </p>
-            <div
-              class="u-container-style u-group u-palette-1-dark-3 u-radius-17 u-shape-round u-group-4"
-            >
-              <div class="u-container-layout u-container-layout-4">
-                <p class="u-custom-font u-font-courier-new u-text u-text-10">
-                  ${messages[i].wallet}
-                </p>
-              </div>
-            </div>
-            <p class="u-custom-font u-font-courier-new u-text u-text-11">
-              ${formatDate(createdOn)}
-            </p>
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-container-style u-expanded-width u-grey-50 u-group u-radius-12 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <p class="u-align-right u-text u-text-1">${messages[i].wallet}</p>
+            <h3 class="u-text u-text-default u-text-2">Posted By:&nbsp;${messages[i].nickname}</h3>
+            <h4 class="u-text u-text-default u-text-3"><b>${messages[i].topic}</b>
+            </h4>
+            <p class="u-text u-text-4">${messages[i].message}</p>
+            <p class="u-text u-text-5">${formatDate(createdOn)}</p>
           </div>
         </div>
       </div>
