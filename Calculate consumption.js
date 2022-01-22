@@ -34,8 +34,10 @@ function modalToggle(){
 }
 
 function calc_saved(value) {
+  
   var average = document.getElementById("Household").value;
   var average, x, y, nA;
+  
   if (average === "Rm12") {
     x = 170.2 - value;
     y = x * 0.025;
