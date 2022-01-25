@@ -110,7 +110,7 @@ db.collection("messages")
     for (let i = 0; i < messages.length; i++) {
       const createdOn = new Date(messages[i].date.seconds * 1000);
       dataArea.innerHTML += `
-      <section class="u-clearfix u-custom-color-1 u-section-2" id="sec-0b4c">
+      <section class="u-clearfix u-section-2" id="sec-0b4c">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-container-style u-expanded-width u-grey-50 u-group u-radius-12 u-shape-round u-group-1">
           <div class="u-container-layout u-container-layout-1">
