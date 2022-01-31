@@ -58,6 +58,7 @@ function calc_saved(value) {
     x = 274.2 - value;
     y = x * 0.025;
     nA = 274.2;
+    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
@@ -73,6 +74,7 @@ function calc_saved(value) {
     x = 375.5 - value;
     y = x * 0.025;
     nA = 375.5;
+    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
@@ -87,6 +89,7 @@ function calc_saved(value) {
     x = 456 - value;
     y = x * 0.025;
     nA = 456;
+    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
@@ -101,6 +104,7 @@ function calc_saved(value) {
     x = 538.7 - value;
     y = x * 0.025;
     nA = 538.7;
+    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
@@ -115,6 +119,7 @@ function calc_saved(value) {
     x = 1209.1 - value;
     y = x * 0.025;
     nA = 1209.1;
+    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
