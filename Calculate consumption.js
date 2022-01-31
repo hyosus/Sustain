@@ -36,20 +36,21 @@ function modalToggle(){
 function calc_saved(value) {
   
   var average = document.getElementById("Household").value;
-  var average, x, y, nA;
+  var average, x, y, nA,claim;
   
   if (average === "Rm12") {
     x = 170.2 - value;
     y = x * 0.025;
+    claim = x * 0.025;
     nA = 170.2;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2);
-      document.getElementById("number").value =
-        y.toFixed(2);
+        y.toFixed(1);
+      document.getElementById("buyQty").value =
+        Math.round(claim);
     }
   }
 
@@ -61,8 +62,10 @@ function calc_saved(value) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
-      document.getElementById("number").value =
+      document.getElementById("earned").value =
         y.toFixed(2);
+      document.getElementById("buyQty").value =
+        claim.toFixed(2);
     }
   }
 
