@@ -63,9 +63,9 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2);
+        Math.round(y);
       document.getElementById("buyQty").value =
-        claim.toFixed(2);
+        Math.round(claim);
     }
   }
 
@@ -78,7 +78,9 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2);
+        Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(claim);
     }
   }
   if (average === "Rm5E") {
@@ -90,7 +92,9 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2);
+        Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(claim);
     }
   }
   if (average === "Pac") {
@@ -102,7 +106,9 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2);
+        Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(claim);
     }
   }
   if (average === "Ld") {
@@ -114,7 +120,9 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(2);
+        Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(claim);
     }
   }
 
