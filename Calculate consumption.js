@@ -48,7 +48,7 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
-        y.toFixed(1);
+        Math.round(y);
       document.getElementById("buyQty").value =
         Math.round(claim);
     }
