@@ -36,7 +36,7 @@ function modalToggle(){
 function calc_saved(value) {
   
   var average = document.getElementById("Household").value;
-  var average, x, y, nA;
+  var average, x, y, nA,claim;
   
   if (average === "Rm12") {
     x = 170.2 - value;
@@ -47,6 +47,8 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
+        y.toFixed(2);
+      document.getElementById("claim").value =
         y.toFixed(2);
     }
   }
@@ -121,7 +123,6 @@ function calc_saved(value) {
   document.getElementById("average").value =
     average.toFixed(2) ;
   document.getElementById("Household").value = document.getElementById("Consumption").value;
-
 }
 
 
@@ -220,10 +221,3 @@ submitButton.addEventListener("click", e => {
   //alert
   alert("Your Form Has Been Submitted Successfully");
 });
-
-function claim_rewards(){
-    var earned = document.getElementById('earned');
-    var claim = document.getElementById('claim');
-  
-    claim.textContent = earned.value;
-}
