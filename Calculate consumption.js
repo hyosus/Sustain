@@ -221,3 +221,9 @@ submitButton.addEventListener("click", e => {
   alert("Your Form Has Been Submitted Successfully");
 });
 
+function claim_rewards(){
+    var earned = document.getElementById('earned');
+    var claim = document.getElementById('claim');
+  
+    claim.textContent = earned.value;
+}

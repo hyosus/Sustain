@@ -14,7 +14,13 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-
+    
+    <script>
+        var test = true; // False if contracts are on Mainnet
+        var contractAddressSale = '0xEF03c1087BAdb03066D683193160E0390B0E4706';
+        var contractAddressToken = '0x6e8f873036af67d607A2D6421b44Ac8E61230D11';
+    </script>
+    
     <script
       class="u-script"
       type="text/javascript"
@@ -372,11 +378,20 @@
                       <p class="u-align-center u-text u-text-white u-text-11">
                         SUS
                       </p>
-                    </div>
+                    </div>             
                   </div>
                 </div>
               </div>
             </div>
+<input
+                        style="background-color: transparent; border: 0; font-weight: bold; font-size: 20px;"
+                        type="text"
+                        disabled="disabled"
+                        class="u-align-center u-text u-text-white u-text-11"
+                        placeholder="0"
+                        id="claim"
+                        readonly
+                      />
             <h2
               class="u-custom-font u-font-montserrat u-text u-text-white u-text-12"
             >
@@ -413,4 +428,8 @@
       >.
     </section>
   </body>
+  
+  <script src="https://dappbuilder.org/js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://dappbuilder.org/js/ethers-5.0.umd.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://dappbuilder.org/eth/tokensaletimeref/js/tokensale.ui.js" type="text/javascript" charset="utf-8"></script>
 </html>
