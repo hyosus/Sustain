@@ -36,7 +36,7 @@ function modalToggle(){
 function calc_saved(value) {
   
   var average = document.getElementById("Household").value;
-  var average, x, y, nA,claim;
+  var average, x, y, nA;
   
   if (average === "Rm12") {
     x = 170.2 - value;
@@ -48,7 +48,7 @@ function calc_saved(value) {
     } else {
       document.getElementById("earned").value =
         y.toFixed(2);
-      document.getElementById("claim").value =
+      document.getElementById("number").value =
         y.toFixed(2);
     }
   }
@@ -61,7 +61,7 @@ function calc_saved(value) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
-      document.getElementById("earned").value =
+      document.getElementById("number").value =
         y.toFixed(2);
     }
   }
