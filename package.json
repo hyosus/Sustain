@@ -3,7 +3,8 @@
     "firebase": "^9.6.1",
     "@firebase/firestore": "^3.4.1",
     "tesseract": "^0.0.3",
-    "node-tesseract": "^0.2.7"
+    "node-tesseract": "^0.2.7",
+    "firebase-tools": "^10.1.2"
   },
   "scripts": {
     "start": "ws --port 3000 --log.format combined --directory . --blacklist '/.env' '/.data' '/.git'"
