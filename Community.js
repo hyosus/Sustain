@@ -110,24 +110,60 @@ db.collection("messages")
     for (let i = 0; i < messages.length; i++) {
       const createdOn = new Date(messages[i].date.seconds * 1000);
       dataArea.innerHTML += `
-      <section class="u-clearfix u-section-2" id="sec-0b4c">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-container-style u-expanded-width u-grey-50 u-group u-radius-12 u-shape-round u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <div class="u-container-style u-group u-group-2">
-              <div class="u-container-layout">
-                <p class="u-align-right u-text u-text-1">${messages[i].wallet}</p>
-                <h3 class="u-text u-text-2">Posted By:&nbsp; ${messages[i].nickname}</h3>
+      <section class="u-clearfix u-section-3" id="sec-e120">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-custom-color-1 u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-20">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-24 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h1 class="u-text u-title u-text-1">Posted By:&nbsp; ${messages[i].nickname}</h1>
+                      <div class="u-border-2 u-border-custom-color-2 u-line u-line-horizontal u-line-1"></div>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-36 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <h2 class="u-align-right u-subtitle u-text u-text-white u-text-2">${messages[i].wallet}</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-custom-color-4 u-layout-cell u-size-60 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-3">
+                      <h1 class="u-text u-text-default u-title u-text-3">${messages[i].topic}</h1>
+                      <p class="u-text u-text-4">${messages[i].message}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-20">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                    <div class="u-container-layout u-valign-bottom u-container-layout-4">
+                      <p class="u-align-left u-text u-text-5">${formatDate(createdOn)}</p>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-5">
+                    <div class="u-container-layout u-valign-bottom u-container-layout-5">
+                      <div class="u-align-right u-container-style u-group u-group-1">
+                        <div class="u-container-layout"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/1.png?v=1643727172656" alt=""></span><span class="u-file-icon u-icon u-text-white u-icon-2"><img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/2.png?v=1643727172656" alt=""></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="u-border-2 u-border-custom-color-2 u-expanded-width u-line u-line-horizontal u-line-1"></div>
-            <h4 class="u-text u-text-default u-text-3"><b>${messages[i].topic}</b>
-            </h4>
-            <p class="u-text u-text-4">${messages[i].message}</p>
-            <p class="u-text u-text-5"> ${formatDate(createdOn)}</p>
           </div>
         </div>
       </div>
+      
+      
+      
       </section>
 						`;
     }
