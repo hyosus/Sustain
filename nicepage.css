@@ -33723,7 +33723,7 @@ a.u-link.u-text-hover-black:hover {
 .u-text-body-color,
 a.u-button-style.u-text-body-color,
 a.u-button-style.u-text-body-color[class*="u-border-"] {
-  color: #111111;
+  color: #111111 !important;
 }
 a.u-button-style.u-text-body-color:hover,
 a.u-button-style.u-text-body-color[class*="u-border-"]:hover,
