@@ -110,9 +110,9 @@ db.collection("messages")
     for (let i = 0; i < messages.length; i++) {
       const createdOn = new Date(messages[i].date.seconds * 1000);
       dataArea.innerHTML += `
-      <section class="u-clearfix u-section-3" id="sec-e120">
+      <section class="u-clearfix u-section-2" id="sec-e120">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-custom-color-1 u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-clearfix u-custom-color-1 u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-col">
               <div class="u-size-20">
@@ -132,7 +132,7 @@ db.collection("messages")
               </div>
               <div class="u-size-20">
                 <div class="u-layout-row">
-                  <div class="u-container-style u-custom-color-4 u-layout-cell u-size-60 u-layout-cell-3">
+                  <div class="u-container-style u-layout-cell u-shape-rectangle u-size-60 u-layout-cell-3">
                     <div class="u-container-layout u-container-layout-3">
                       <h1 class="u-text u-text-default u-title u-text-3">${messages[i].topic}</h1>
                       <p class="u-text u-text-4">${messages[i].message}</p>
@@ -161,10 +161,7 @@ db.collection("messages")
           </div>
         </div>
       </div>
-      
-      
-      
-      </section>
+    </section>
 						`;
     }
   });
