@@ -36,12 +36,11 @@ function modalToggle(){
 function calc_saved(value) {
   
   var average = document.getElementById("Household").value;
-  var average, x, y, nA,claim;
+  var average, x, y, nA;
   
   if (average === "Rm12") {
     x = 170.2 - value;
     y = x * 0.025;
-    claim = x * 0.025;
     nA = 170.2;
     if (y <= 0) {
       modal.classList.toggle('active');
@@ -49,8 +48,6 @@ function calc_saved(value) {
     } else {
       document.getElementById("earned").value =
         Math.round(y);
-      document.getElementById("buyQty").value =
-        Math.round(claim);
     }
   }
 
@@ -58,15 +55,12 @@ function calc_saved(value) {
     x = 274.2 - value;
     y = x * 0.025;
     nA = 274.2;
-    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         Math.round(y);
-      document.getElementById("buyQty").value =
-        Math.round(claim);
     }
   }
 
@@ -74,60 +68,48 @@ function calc_saved(value) {
     x = 375.5 - value;
     y = x * 0.025;
     nA = 375.5;
-    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         Math.round(y);
-      document.getElementById("buyQty").value =
-        Math.round(claim);
     }
   }
   if (average === "Rm5E") {
     x = 456 - value;
     y = x * 0.025;
     nA = 456;
-    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         Math.round(y);
-      document.getElementById("buyQty").value =
-        Math.round(claim);
     }
   }
   if (average === "Pac") {
     x = 538.7 - value;
     y = x * 0.025;
     nA = 538.7;
-    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         Math.round(y);
-      document.getElementById("buyQty").value =
-        Math.round(claim);
     }
   }
   if (average === "Ld") {
     x = 1209.1 - value;
     y = x * 0.025;
     nA = 1209.1;
-    claim = x * 0.025;
     if (y <= 0) {
       modal.classList.toggle('active');
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
         Math.round(y);
-      document.getElementById("buyQty").value =
-        Math.round(claim);
     }
   }
 
@@ -139,6 +121,7 @@ function calc_saved(value) {
   document.getElementById("average").value =
     average.toFixed(2) ;
   document.getElementById("Household").value = document.getElementById("Consumption").value;
+  //document.getElementById("buyQty").value = document.getElementById("earned").value;
 }
 
 
