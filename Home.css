@@ -25,7 +25,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 375px;
-  background-image: url("images/logo-green1.png");
+  background-image: url("https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526");
   background-position: 50% 50%;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .u-section-1 .u-btn-1.u-btn-1.u-btn-1:hover {
-  box-shadow: 0 0 18px 0 rgba(37,234,139,1) !important;
+  box-shadow: 0 0 18px 0 #25EA8B !important;
 }
 
 .u-section-1 .u-btn-1.u-btn-1.u-btn-1.hover {
