@@ -229,3 +229,14 @@
     width: 320px;
   }
 }
+
+input[type=text], select{
+  background: transparent;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+}
+
+input[type=text]{
+  height: 1.7rem;
+}
