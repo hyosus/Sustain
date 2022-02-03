@@ -3,7 +3,7 @@ dependencies:
   firebase: 9.6.5
   firebase-tools: 10.1.2
   node-tesseract: 0.2.7
-  tesseract: 0.0.3
+  tesseract.js: 2.1.5
 packages:
   /@apidevtools/json-schema-ref-parser/9.0.9:
     dependencies:
@@ -1002,6 +1002,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-9y12C+Cbf3bQjtj66Ysomo0F+rM=
+  /blueimp-load-image/3.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-Q9rFbd4ZUNvzSFmRXx9MoG0RwWwJeMjjEUbG7WIOJgUg22Jgkow0wL5b35B6qwiBscxACW9OHdrP5s2vQ3x8DQ==
+  /bmp-js/0.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-4Fpj95amwf8l9Hcex62twUjAcjM=
   /body-parser/1.19.1:
     dependencies:
       bytes: 3.1.1
@@ -2067,6 +2075,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==
+  /file-type/12.4.2:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-UssQP5ZgIOKelfsaB5CuGAL+Y+q7EmONuiwF3N5HAH0t27rvrttgi6Ra9k/+DVaY9UF6+ybxu5pOXLUdA8N7Vg==
   /file-uri-to-path/2.0.0:
     dev: false
     engines:
@@ -2671,6 +2685,10 @@ packages:
     optional: true
     resolution:
       integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==
+  /idb-keyval/3.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-slx8Q6oywCCSfKgPgL0sEsXtPVnSbTLWpyiDcu6msHOyKOLari1TD1qocXVCft80umnkk3/Qqh3lwoFt8T/BPQ==
   /idb/3.0.2:
     dev: false
     resolution:
@@ -2794,6 +2812,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YfJT7rkpQB0updsdHLGWrvhBJfcfzNNawYDNIyQXJz0IViGf75O8EBPKSdvw2rF+LGCsX4FZ8tcr3b19LcZq4w==
+  /is-electron/2.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-r8EEQQsqT+Gn0aXFx7lTFygYQhILLCB+wn0WCDL5LZRINeLH/Rvw1j2oKodELLXYNImQ3CRlVsY8wW4cGOsyuw==
   /is-extglob/2.1.1:
     dev: false
     engines:
@@ -2949,6 +2971,23 @@ packages:
     dev: false
     resolution:
       integrity: sha1-EFNaEm0ky9Zff/zfFe8uYxB2tQU=
+  /jpeg-autorotate/7.1.1:
+    dependencies:
+      colors: 1.4.0
+      glob: 7.2.0
+      jpeg-js: 0.4.3
+      piexifjs: 1.0.6
+      yargs-parser: 20.2.9
+    dev: false
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-ewTZTG/QWOM0D5h/yKcQ3QgyrnQYsr3qmcS+bqoAwgQAY1KBa31aJ+q+FlElaxo/rSYqfF1ixf+8EIgluBkgTg==
+  /jpeg-js/0.4.3:
+    dev: false
+    resolution:
+      integrity: sha512-ru1HWKek8octvUHFHvE5ZzQ1yAsJmIvRdGWvSoKV52XKyuyYA437QWDttXT8eZXDSbuMpHlLzPDZUPd6idIz+Q==
   /js-yaml/3.14.1:
     dependencies:
       argparse: 1.0.10
@@ -3728,6 +3767,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-v6X3iwddhi276siej96jHGIqTx3wzVfMTmpGJEQDt7GPI7pI6sywItURLzpEci21SBRpPN/aOWSF5mVfFVNmcg==
+  /opencollective-postinstall/2.0.3:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
   /optionator/0.8.3:
     dependencies:
       deep-is: 0.1.4
@@ -3869,6 +3913,10 @@ packages:
       node: '>=8.6'
     resolution:
       integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
+  /piexifjs/1.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-0wVyH0cKohzBQ5Gi2V1BuxYpxWfxF3cSqfFXfPIpl5tl9XLS5z4ogqhUCD20AbHi0h9aJkqXNJnkVev6gwh2ag==
   /portfinder/1.0.28:
     dependencies:
       async: 2.6.3
@@ -4122,6 +4170,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-iYS1gV2ZyyIEacme7v/jiRPmzAs=
+  /regenerator-runtime/0.13.9:
+    dev: false
+    resolution:
+      integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
   /registry-auth-token/4.2.1:
     dependencies:
       rc: 1.2.8
@@ -4178,6 +4230,11 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
+  /resolve-url/0.2.1:
+    deprecated: 'https://github.com/lydell/resolve-url#deprecated'
+    dev: false
+    resolution:
+      integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
   /responselike/1.0.2:
     dependencies:
       lowercase-keys: 1.0.1
@@ -4679,13 +4736,29 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==
-  /tesseract/0.0.3:
+  /tesseract.js-core/2.2.0:
     dev: false
-    engines:
-      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-a8L+OJTbUipBsEDsJhDPlnLB0TY1MkTZqw5dqUwmiDSjUzwvU7HWLg/2+WDRulKUi4LE+7PnHlaBlW0k+V0U0w==
+  /tesseract.js/2.1.5:
+    dependencies:
+      blueimp-load-image: 3.0.0
+      bmp-js: 0.1.0
+      file-type: 12.4.2
+      idb-keyval: 3.2.0
+      is-electron: 2.2.1
+      is-url: 1.2.4
+      jpeg-autorotate: 7.1.1
+      node-fetch: 2.6.7
+      opencollective-postinstall: 2.0.3
+      regenerator-runtime: 0.13.9
+      resolve-url: 0.2.1
+      tesseract.js-core: 2.2.0
+      zlibjs: 0.3.1
+    dev: false
     requiresBuild: true
     resolution:
-      integrity: sha1-/0udBb/uDZDT2TRQ6MZgaVT/Niw=
+      integrity: sha512-7CIS3SWr7TXpeaH9+HS7iUtVbCfPFYOO3p6rkRAkdtsOtrbz6496x59na6SCbFAIaZulQxy8BjwSu3qL3AoDRg==
   /text-hex/1.0.0:
     dev: false
     resolution:
@@ -5204,6 +5277,10 @@ packages:
       node: '>= 10'
     resolution:
       integrity: sha512-zshzwQW7gG7hjpBlgeQP9RuyPGNxvJdzR8SUM3QhxCnLjWN2E7j3dOvpeDcQoETfHx0urRS7EtmVToql7YpU4A==
+  /zlibjs/0.3.1:
+    dev: false
+    resolution:
+      integrity: sha1-UBl+2yihxCymWcyLTmqd3W1ERVQ=
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -5212,4 +5289,4 @@ specifiers:
   firebase: ^9.6.5
   firebase-tools: ^10.1.2
   node-tesseract: ^0.2.7
-  tesseract: ^0.0.3
+  tesseract.js: ^2.1.5

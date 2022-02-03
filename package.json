@@ -2,7 +2,7 @@
   "dependencies": {
     "firebase": "^9.6.5",
     "@firebase/firestore": "^3.4.4",
-    "tesseract": "^0.0.3",
+    "tesseract.js": "^2.1.5",
     "node-tesseract": "^0.2.7",
     "firebase-tools": "^10.1.2"
   },
