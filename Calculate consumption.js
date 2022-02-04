@@ -33,6 +33,7 @@ function modalToggle(){
   modal.classList.toggle('active')
 }
 
+// Calculation
 function calc_saved(value) {
   
   var average = document.getElementById("Household").value;
@@ -48,6 +49,8 @@ function calc_saved(value) {
     } else {
       document.getElementById("earned").value =
         Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(y);
     }
   }
 
@@ -60,6 +63,8 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
+        Math.round(y);
+      document.getElementById("buyQty").value =
         Math.round(y);
     }
   }
@@ -74,6 +79,8 @@ function calc_saved(value) {
     } else {
       document.getElementById("earned").value =
         Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(y);
     }
   }
   if (average === "Rm5E") {
@@ -85,6 +92,8 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
+        Math.round(y);
+      document.getElementById("buyQty").value =
         Math.round(y);
     }
   }
@@ -98,6 +107,8 @@ function calc_saved(value) {
     } else {
       document.getElementById("earned").value =
         Math.round(y);
+      document.getElementById("buyQty").value =
+        Math.round(y);
     }
   }
   if (average === "Ld") {
@@ -109,6 +120,8 @@ function calc_saved(value) {
       document.getElementById("earned").value = " 0";
     } else {
       document.getElementById("earned").value =
+        Math.round(y);
+      document.getElementById("buyQty").value =
         Math.round(y);
     }
   }

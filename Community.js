@@ -107,6 +107,7 @@ db.collection("messages")
       dataArea.innerHTML = "<p>No messages</p>";
     }
 
+  // Post forum
     for (let i = 0; i < messages.length; i++) {
       const createdOn = new Date(messages[i].date.seconds * 1000);
       dataArea.innerHTML += `

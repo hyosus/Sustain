@@ -97,16 +97,20 @@
  .content .inputBox input[type="submit"] {
     max-width: 150px;
     background: #03a9f4;
-    color: #fff;
+    color: #ebebeb;
     border: none;
 }
 
 .fa-close {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    color: #333 !important;
+    top: 30px !important;
+    right: 30px !important;
+    color: black !important;
     cursor: pointer;
+  font-weight: 900;
+    width: 30px;
+    background: transparent;
+
 }
 .fa-envelope{
     font-size: 100px !important;
