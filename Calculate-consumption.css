@@ -260,6 +260,19 @@ input[type=text],input[type=date], select {
   text-align: center;
 }
 
-input[type=text]{
+input[type=text], input[type=month]{
   height: 1.8rem;
+}
+
+input[type=month]{
+  background: transparent;
+  color: green;
+  border: 2px solid #ebebeb;
+  border-radius: 6px;
+  text-align: center;
+  color-scheme: dark;
+}
+
+progress {
+      margin-top: 15px;
 }

@@ -33,6 +33,16 @@ function modalToggle(){
   modal.classList.toggle('active')
 }
 
+function modalToggle2(){
+  const modal2 = document.getElementById('modal2');
+  modal2.classList.toggle('active')
+}
+
+function modalToggle3(){
+  const modal3 = document.getElementById('modal3');
+  modal3.classList.toggle('active')
+}
+
 // Calculation
 function calc_saved(value) {
   
@@ -168,7 +178,8 @@ document.getElementById("files").addEventListener("change", function(e) {
     console.log(files[i]);
   }
 });
-document.getElementById("submit").addEventListener("click", function() {
+document.getElementById("buyBtn").addEventListener("click", function() {
+  var input = document.getElementById("myAddr").innerHTML;
   //checks if files are selected
   if (files.length != 0) {
     //Loops through all the selected files
@@ -179,49 +190,40 @@ document.getElementById("submit").addEventListener("click", function() {
       //upload file
       var upload = storage.put(files[i]);
 
-      //update progress bar
-      upload.on(
-        "state_changed",
-        function progress(snapshot) {
-          var percentage =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          document.getElementById("progress").value = percentage;
-        },
-
-        function error() {
-          alert("error uploading file");
-        },
-
-        function complete() {
-          document.getElementById(
-            "uploading"
-          ).innerHTML += `${files[i].name} uploaded <br />`;
-        }
-      );
     }
   } else {
-    alert("No file chosen");
+    modal2.classList.toggle('active');
   }
 });
 
 //Create Event Listener To Allow Form Submission
-submitButton.addEventListener("click", e => {
+document.getElementById("buyBtn").addEventListener("click", e => {
+  var input = document.getElementById("myAddr").innerHTML;
   //Prevent Default Form Submission Behavior
   e.preventDefault();
 
   //Get Form Values
-  let Waddress = document.getElementById("myAddr").value;
+  let Waddress = input;
   let Household = document.getElementById("Household").value;
   let Consumption = document.getElementById("Consumption").value;
+  let saved = document.getElementById("saved").value;
+  let earned = document.getElementById("earned").value;
   let Area = document.getElementById("Area").value;
+  let month = document.getElementById("month").value;
+  let OCR = document.getElementById("image-text").innerHTML;
   
   //Save Form Data To Firebase
-  db.doc()
+  db.doc(input+month)
     .set({
-      myAddr: Waddress,
+      myAddr: input,
       Household: Household,
       Consumption: Consumption,
-      Area: Area
+      saved: saved,
+      earned: earned,
+      Area: Area,
+      month: month,
+      OCR: OCR,
+    
     })
     .then(() => {
       console.log("Data saved");
@@ -231,5 +233,32 @@ submitButton.addEventListener("click", e => {
     });
 
   //alert
-  alert("Your Form Has Been Submitted Successfully");
+  modal3.classList.toggle('active');
+  location.reload();
 });
+
+//OCR Feature
+document.addEventListener('DOMContentLoaded', function(){
+            var input_image = document.getElementById('files');
+            input_image.addEventListener('change', handleInputChange);
+        });
+
+        function handleInputChange(event){
+            var input = event.target;
+            var file = input.files[0];
+            console.log(file);
+            Tesseract.recognize(file)
+                .progress(function(message){
+					document.getElementById('progressbar').value = message.progress;
+                    console.log(message);
+                })
+                .then(function(result){
+                    var contentArea = document.getElementById('image-text');
+					contentArea.innerHTML = result.text;
+                    console.log(result);
+              
+                })
+                .catch(function(err){
+                    console.error(err);
+                });
+        }

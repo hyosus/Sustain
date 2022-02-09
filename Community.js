@@ -151,7 +151,7 @@ db.collection("messages")
                   <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-5">
                     <div class="u-container-layout u-valign-bottom u-container-layout-5">
                       <div class="u-align-right u-container-style u-group u-group-1">
-                        <div class="u-container-layout"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/1.png?v=1643727172656" alt=""></span><span class="u-file-icon u-icon u-text-white u-icon-2"><img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/2.png?v=1643727172656" alt=""></span>
+                        <div class="u-container-layout"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/1.png?v=1643727172656" alt=""></span><span class="u-file-icon u-icon u-text-white u-icon-2"><img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/2.png?v=1643804994134" alt=""></span>
                         </div>
                       </div>
                     </div>

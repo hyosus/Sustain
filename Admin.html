@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="Admin.css">
+    <script>
+          var test = true; // False if contracts are on Mainnet
+          var contractAddressSale = '0xEF03c1087BAdb03066D683193160E0390B0E4706';
+          var contractAddressToken = '0x6e8f873036af67d607A2D6421b44Ac8E61230D11';
+      </script>
+      
+      <title>Admin</title>
+    </head>
+    <body>
+      
+
+        <div class="container">
+          <div class="brand-logo"></div>
+          <div class="brand-title">Update Profile</div>
+          <div class="inputs">
+            <form id="update-user-form">
+            <label>NAME/USERNAME</label>
+            <input type="name" id="update_name" name="name" placeholder="Update name">
+            <label>EMAIL</label>
+            <input type="email" id="update_email" name="email" placeholder="Update e-mail">
+            <label>Bio</label>
+            <textarea class="bio" name="bio" placeholder="Update bio"></textarea>
+            <button class ="update" >Update Profile</button>
+            </form>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="brand-logo-create"></div>
+          <div class="brand-title">Create Profile</div>
+          <div class="inputs">
+            <form id="add-user-form">
+            <label>NAME/USERNAME</label>
+            <input type="name" name="name" placeholder="Name">
+            <label>EMAIL</label>
+            <input type="email" name="email" placeholder="Email">
+            <label>Bio</label>
+            <textarea class = "bio" name="bio" placeholder="Add bio"></textarea>
+             <button class ="update" >Add user</button>
+            </form>
+          </div>
+        </div>
+      
+        <div class="search-content">
+        <h1 id="search-list"></h1>
+        </div>
+        <h2>Wallet Info search</h2>
+        <div class="content">
+          <label style = "color: black;">Wallet Address</label>
+          <label type="text" id="myAddr" style="color:black;font-size: 15px;"></label>
+          </div>
+        <h1>Admin Panel</h1>
+        <h2 style = "color: green" >User's Created: <p id = "Userlistcount" style = "color: white"></p></h2>
+        
+        <h2 >User's Info</h2>
+        <div class="content">
+            <ul id="user-list"></ul>  
+        </div>
+        <h2 style = "color: green">Forms Submitted: <p id = "consumptionlistcount" style = "color: white"></p></h2>  
+        <h2>User's Consumption data</h2>
+        <div class="content">
+          <form id="add-Consumption-form">
+                  <select id="Area" style="color: grey; width: 50%;">
+                    <option value="amk">Ang Mo Kio</option>
+                    <option value="bedok">Bedok</option>
+                    <option value="bishan">Bishan</option>
+                    <option value="bukitbatok">Bukit Batok</option>
+                    <option value="bukitmerah">Bukit Merah</option>
+                    <option value="bukitpanjang">Bukit Panjang</option>
+                    <option value="bukittimah">Bukit Timah</option>
+                    <option value="new_changi3w">Changi</option>
+                    <option value="cck">Choa Chu Kang</option>
+                    <option value="clementi">Clementi</option>
+                    <option value="new_downtown3w">Downtown</option>
+                    <option value="geylang">Geylang</option>
+                    <option value="hougang">Hougang</option>
+                    <option value="jurongeast">Jurong East</option>
+                    <option value="jurongwest">Jurong West</option>
+                    <option value="kallang">Kallang</option>
+                    <option value="new_mandai3w">Mandai</option>
+                    <option value="marineparade">Marine Parade</option>
+                    <option value="new_museum3w">Museum</option>
+                    <option value="new_newton3w">Newton</option>
+                    <option value="novena">Novena</option>
+                    <option value="new_orchard3w">Orchard</option>
+                    <option value="outram">Outram</option>
+                    <option value="pasirris">Pasir Ris</option>
+                    <option value="new_payalebar3w">Paya Lebar</option>
+                    <option value="punggol">Punggol</option>
+                    <option value="queenstown">Queenstown</option>
+                    <option value="new_rivervalley3w">River Valley</option>
+                    <option value="rochor">Rochor</option>
+                    <option value="new_seletar3w">Seletar</option>
+                    <option value="sengkang">Sengkang</option>
+                    <option value="sembawang">Sembawang</option>
+                    <option value="serangoon">Serangoon</option>
+                    <option value="new_singaporeriver3w">Singapore River</option>
+                    <option value="new_southernislands3w">Southern Islands</option>
+                    <option value="new_sungeikadut3w">Sungei Kadut</option>
+                    <option value="tampines">Tampines</option>
+                    <option value="tanglin">Tanglin</option>
+                    <option value="toapayoh">Toa Payoh</option>
+                    <option value="woodlands">Woodlands</option>
+                    <option value="yishun">Yishun</option>
+                  </select>
+                <input type="number" name="Consumption" placeholder="Consumption" style = "width: 50%;">
+                <select name="Household" style="color: grey; width: 50%;">
+                    <option value="Rm12">1 or 2-room</option>
+                    <option value="Rm3" selected="selected">3-Room</option>
+                    <option value="Rm4">4-Room</option>
+                    <option value="Rm5E">5-room and Exec HDB</option>
+                    <option value="Pac">Private/Condo</option>
+                    <option value="Ld">Landed</option>
+                  </select>
+                <input type="text" name="myAddr" placeholder="Address" style = "width: 50%;">
+                <button>Add Data</button>
+            </form>
+        <ul  id="Formdata"></ul>
+        </div>
+      
+        <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyBIVgnaw83MSmf7iWwq58ih9E2r3lA8ydY",
+              authDomain: "sustain-f115c.firebaseapp.com",
+              databaseURL: "https://sustain-f115c-default-rtdb.asia-southeast1.firebasedatabase.app",
+              projectId: "sustain-f115c",
+              storageBucket: "sustain-f115c.appspot.com",
+              messagingSenderId: "748836738977",
+              appId: "1:748836738977:web:7751a91d2a632e0a271de0",
+              measurementId: "G-ZFH9D225R1"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+  <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+  <script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+  <script src='https://dappbuilder.org/eth/tokensaletimeref/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,318 @@
+
+body{
+    background: #000000;
+    font-family:Montserrat, sans-serif;
+}
+
+h1{
+    color: #00FF00;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+h2{
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content{
+    background: #FFFFFF;
+    max-width: 960px;
+    max-height: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    max-height: 960px;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 20px;
+    margin-top: 6px;
+    color: #555;
+}
+
+li span:nth-child(4){
+    font-size: 20px;
+    margin-top: 6px;
+    color: #808080;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+form input{
+    background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid green;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: inline-block;;
+}
+
+form select{
+  background: #ecf0f3;
+  border: 0;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+form select:focus{
+    outline: none;
+    border-bottom: 3px solid green;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form select:after{
+    content: '';
+    clear: both;
+    display: inline-block;;
+}
+
+button{
+    border: 1;
+    border: 2px solid grey;
+    background: white;
+    border-radius: 10px;
+    padding: 13px;
+    width: 20%;
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: Courier New;
+    letter-spacing: 1px;
+    color: green;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+.container {
+  position: relative;
+  width: 370px;
+  height: 600px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px green;
+  margin: 30 auto;
+}
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("https://img.icons8.com/ios-glyphs/100/000005/change-user-male.png");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+.brand-logo-create {
+  height: 100px;
+  width: 100px;
+  background: url("https://img.icons8.com/ios-glyphs/100/000000/user--v1.png");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: darkgrey;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input{
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+a {
+  position: absolute;
+  font-size: 8px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+
+textarea {
+  background: #ecf0f3;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 20px;
+  height: 100px;
+  width: 279px;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+button.update{
+    position: center;
+    background: white;
+    width: 100%;
+    font-weight: bold;
+    font-family: Courier New;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+li button{
+    position: right;
+    background: white;
+    width: 20%;
+    font-weight: bold;
+    font-family: Courier New;
+    letter-spacing: 1px;
+    color: grey;
+    border: 1px solid grey;
+}
+
+li button:active{
+    position: right;
+    background: white;
+    width: 20%;
+    font-weight: bold;
+    font-family: Courier New;
+    letter-spacing: 1px;
+    color: grey;
+    border: 1px solid green;
+    transform: translateY(4px);
+}
+
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.search-content{
+    background: black;
+    max-width: 500px;
+    max-height: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}

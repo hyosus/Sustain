@@ -32,13 +32,13 @@
 
  
 
-#modal {
+#modal, #modal2 , #modal3{
     position: fixed;
     top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    background: #fff;
+    background: #ffffff;
     width: 450px;
     padding: 80px 50px 50px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
@@ -103,15 +103,22 @@
 
 .fa-close {
     position: absolute;
-    top: 30px !important;
+    top: 10px !important;
     right: 30px !important;
     color: black !important;
     cursor: pointer;
-  font-weight: 900;
+    font-weight: 900;
     width: 30px;
     background: transparent;
+    padding: 0;
 
 }
+
+button.fa-close {
+  border:0;
+  font-size: 20px !important;
+}
+
 .fa-envelope{
     font-size: 100px !important;
     color:  #03a9f4;
