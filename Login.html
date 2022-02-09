@@ -1,99 +1,367 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html style="font-size: 16px">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Login">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Login" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
     <title>Login</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Login.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-    
-    <link rel="stylesheet" href="Login.css" media="screen">
-    <link rel="stylesheet" href="glassmorphism.css" media="screen">
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="Login.css" media="screen" />
+    <link rel="stylesheet" href="Modal.css" media="screen" />
+    <link rel="stylesheet" href="glassmorphism.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526"
+    />
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
 
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Sustain",
-		"logo": "images/logo-green.png"
-}</script>
-    <meta name="theme-color" content="#0054f7">
-    <meta property="og:title" content="Login">
-    <meta property="og:type" content="website">
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="Login.css" media="screen" />
+    <link rel="stylesheet" href="glassmorphism.css" media="screen" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Sustain",
+        "logo": "images/logo-green.png"
+      }
+    </script>
+    <script>
+      var test = true; // False if contracts are on Mainnet
+      var contractAddressSale = "0xEF03c1087BAdb03066D683193160E0390B0E4706";
+      var contractAddressToken = "0x6e8f873036af67d607A2D6421b44Ac8E61230D11";
+    </script>
+    <meta name="theme-color" content="#0054f7" />
+    <meta property="og:title" content="Login" />
+    <meta property="og:type" content="website" />
   </head>
-  <body class="u-body u-overlap u-overlap-contrast u-overlap-transparent"><header class="u-clearfix u-header u-header" id="sec-ceee" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="Home.html" data-page-id="100142671" class="u-image u-logo u-image-1" data-image-width="1000" data-image-height="1000">
-          <img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526" class="u-logo-image u-logo-image-1">
+  <body class="u-body">
+    <header
+      class="u-clearfix u-header u-header"
+      id="sec-ceee"
+      data-animation-name=""
+      data-animation-duration="0"
+      data-animation-delay="0"
+      data-animation-direction=""
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="Home.html"
+          data-page-id="100142671"
+          class="u-image u-logo u-image-1"
+          data-image-width="1000"
+          data-image-height="1000"
+        >
+          <img
+            src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526"
+            class="u-logo-image u-logo-image-1"
+          />
         </a>
-    <a href="Login.html" data-page-id="83928509" class="u-align-right u-border-none u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-palette-4-base u-radius-8 u-btn-1"><b>Login</b></a>
+        <a
+          href="Login.html"
+          data-page-id="83928509"
+          class="u-align-right u-border-none u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-palette-4-base u-radius-8 u-btn-1"
+          ><b>Sign Up</b></a
+        >
         <nav class="u-align-center u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 1.125rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
+          <div
+            class="menu-collapse u-custom-font u-font-montserrat"
+            style="font-size: 1.125rem; letter-spacing: 0px"
+          >
+            <a
+              class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="#"
+            >
+              <svg class="u-svg-link" viewBox="0 0 24 24">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                class="u-svg-content"
+                version="1.1"
+                id="menu-hamburger"
+                viewBox="0 0 16 16"
+                x="0px"
+                y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Calculate-consumption.html">Calculate Consumption</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Get-Token.html">Get Token</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Community.html">Community</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Developer.html">Developer</a>
-</li></ul>
+            <ul
+              class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1"
+            >
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Calculate-consumption.html"
+                  >Calculate Consumption</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Get-Token.html"
+                  >Get Token</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Community.html"
+                  >Community</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Article.html"
+                  >Article</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Developer.html"
+                  >Developer</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div
+              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+            >
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Calculate-consumption.html">Calculate Consumption</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Get-Token.html">Get Token</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Community.html">Community</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Developer.html">Developer</a>
-</li></ul>
+                <ul
+                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                >
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="Calculate-consumption.html"
+                      >Calculate Consumption</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Get-Token.html"
+                      >Get Token</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Community.html"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Article.html"
+                      >Article</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Developer.html"
+                      >Developer</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-      </div></header>
-    
-    <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-3f4d">
-      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-custom-html u-custom-html-1">
-          <h1 style="text-align: center;">Login To Profile</h1>
-          <div id="firebaseui-auth-container"></div>
+      </div>
+    </header>
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form id="update-user-form">
+            <h1>Profile update</h1>
+            <span >ensure your metamask is connected</span>
+            <input
+              type="name"
+              id="update_name"
+              name="name"
+              placeholder="Change name"
+              required
+            />
+            <input
+              type="email"
+              id="update_email"
+              name="email"
+              placeholder="New e-mail"
+              required
+            />
+            <textarea
+              class="bio"
+              name="bio"
+              placeholder="Update bio"
+            ></textarea>
+            <button class="update">Update Profile</button>
+          </form>
+        </div>
+        <span
+          type="text"
+          id="myAddr"
+          style="color: transparent; font-size: 15px"
+        ></span>
+        <div class="form-container sign-in-container">
+          <form id="add-user-form">
+            <h1 id="title">Create Account</h1>
+            <span>Do not have metamask?</span>
+            <a href="https://blog.wetrust.io/how-to-install-and-use-metamask-7210720ca047">MetaMask Guide</a>
+            <input type="name" name="name" placeholder="Name" required/>
+            <input type="email" name="email" placeholder="Email" required/>
+            <textarea
+              class="bio"
+              name="bio"
+              placeholder="Talk about yourself..."
+            ></textarea>
+            <button class="update">Sign Up</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1 id="search-list"></h1>
+              <p>
+                Hmm, something's missing....Update your profile, so we can stay
+                in touch!
+              </p>
+              <button class="ghost" id="signIn">Don't have an account?</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="ghost" id="signUp" onclick="search_once(); form_once();adminpage();userlisttimed();consumptionlisttimed(); this.onclick=null;" >
+                Already have an account?
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+<div id="formsub" class="u-clearfix u-sheet u-sheet-1" style="margin-top: 100px;">  
+  <h4>Profile Info</h4>
+<div class="copy-box">
+  <div class="inner">
+    <div class="line right">
+      <div class="scanner"></div>
+    </div>
+      <h5>Consumption Forms Submitted</h5>
+      <div id="Formdata"></div>
       
-    </section>
+  </div>
+</div>
+  </div>
     
     
     
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
+
+    <div id="myDIV"  style="display: none;" class="u-clearfix u-sheet u-sheet-1">  
+  <h4>Admin Panel</h4>
+<div class="copy-box">
+  <div class="inner">
+    <div class="line right">
+      <div class="scanner"></div>
+    </div>
+      <h4 style = "color: green" >Users Created: <a id = "Userlistcount" style = "color: white; font-size: 25px;"></a></h4>
+      <ul id="user-list"></ul>
+  </div>
+</div>
+
+      <div class="u-clearfix u-sheet u-sheet-1">  
+  <h4>Consumption Forms</h4>
+<div class="copy-box">
+  <div class="inner">
+    <div class="line right">
+      <div class="scanner"></div>
+    </div>
+      <h4 style = "color: green" >Forms Submitted: <a id = "consumptionlistcount" style = "color: white; font-size: 25px;"></a></h4>
+      <ul  id="Formdata_admin"></ul>
+  </div>
+</div>
+      
+      
+      
+  </div>
     
-    <script src="fireBase.js"></script>
-    <script src="login.js"></script>
+    <!-- user update MODAL -->
+    <div id="modal">
+        <div class="content">
+            <h2>User update</h2>
+            <p>User update successfully</p>
+        </div>
+
+      <button class="fa fa-close" onclick="modalToggle();">X</button>
+    </div>
+                
+    <!-- END -->
+    
+    <!-- sign up MODAL -->
+    <div id="modal2">
+        <div class="content">
+            <h2>Sign up</h2>
+            <p>Sign Up successfully</p>
+        </div>
+
+      <button class="fa fa-close" onclick="modalToggle2();">X</button>
+    </div>
+                
+    <!-- END -->
+    
+    <script src="Login.js"></script>
+
+    <script
+      src="https://dappbuilder.org/js/jquery-3.6.0.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://dappbuilder.org/js/ethers-5.0.umd.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://dappbuilder.org/eth/tokensaletimeref/js/tokensale.ui.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
   </body>
 </html>

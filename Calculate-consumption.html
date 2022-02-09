@@ -1,128 +1,176 @@
 <!DOCTYPE html>
-<html style="font-size: 16px">
+<html style="font-size: 16px;">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta name="keywords" content="Calculate Electricity Consumption" />
-    <meta name="description" content="" />
-    <meta name="page_type" content="np-template-header-footer-from-plugin" />
-    <title>Calculate-consumption</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Sustain Token">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Calculate Consumption</title>
+    <link rel="icon" href="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Calculate-consumption.css" media="screen" />
     <link rel="stylesheet" href="Modal.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-    
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
     <script>
         var test = true; // False if contracts are on Mainnet
-        var contractAddressSale = '0xEF03c1087BAdb03066D683193160E0390B0E4706';
+        var contractAddressSale = '0x83FA2888d7470596D67d2f9563Cc98D819cb0111';
         var contractAddressToken = '0x6e8f873036af67d607A2D6421b44Ac8E61230D11';
     </script>
     
     <script
       class="u-script"
       type="text/javascript"
-      src="jquery.js"
-      defer=""
-    ></script>
-    <script
-      class="u-script"
-      type="text/javascript"
-      src="nicepage.js"
-      defer=""
-    ></script>
-    <script
-      class="u-script"
-      type="text/javascript"
       src="Calculate consumption.js"
       defer=""
     ></script>
-    <meta name="generator" content="Nicepage 4.2.6, nicepage.com" />
-    <link
-      id="u-theme-google-font"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    />
-    <link
-      id="u-page-google-font"
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-    />
-    <link rel="stylesheet" href="glassmorphism.css" media="screen" />
+    
+    <meta name="generator" content="Nicepage 4.3.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="glassmorphism.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "Sustain",
-        "logo": "images/logo-green2.png"
-      }
-    </script>
-    <meta name="theme-color" content="#0054f7" />
-    <meta property="og:title" content="Calculate-consumption" />
-    <meta property="og:type" content="website" />
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Sustain",
+		"logo": "images/logo-green2.png"
+}</script>
+    <meta name="theme-color" content="#0054f7">
+    <meta property="og:title" content="Get Token">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
   </head>
-  <body class="u-body u-overlap u-overlap-contrast u-overlap-transparent">
-    <header
-      class="u-clearfix u-header u-header"
-      id="sec-ceee"
-      data-animation-name=""
-      data-animation-duration="0"
-      data-animation-delay="0"
-      data-animation-direction=""
-    >
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <a
-          href="Home.html"
-          data-page-id="100142671"
-          class="u-image u-logo u-image-1"
-          data-image-width="1000"
-          data-image-height="1000"
-        >
-          <img
-            src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526"
-            class="u-logo-image u-logo-image-1"
-          />
+  <body class="u-body u-custom-color-1 u-overlap"><header class="u-clearfix u-header u-header" id="sec-ceee" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="Home.html" data-page-id="100142671" class="u-image u-logo u-image-1" data-image-width="1000" data-image-height="1000">
+          <img src="https://cdn.glitch.global/9ee74afb-107d-447a-91f5-2f03dc0c06e6/logo-green.png?v=1641983387526" class="u-logo-image u-logo-image-1">
         </a>
-        <a
-          href="Login.html"
-          data-page-id="83928509"
-          class="u-align-right u-border-none u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-palette-4-base u-radius-8 u-btn-1"
-          ><b>Login</b>
+        <a href="Login.html" data-page-id="83928509" class="u-align-right u-border-none u-btn u-btn-round u-button-style u-custom-font u-font-montserrat u-palette-4-base u-radius-8 u-btn-1"><b>Sign Up</b>
         </a>
         <nav class="u-align-center u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 1.125rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
+          <div
+            class="menu-collapse u-custom-font u-font-montserrat"
+            style="font-size: 1.125rem; letter-spacing: 0px"
+          >
+            <a
+              class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+              href="#"
+            >
+              <svg class="u-svg-link" viewBox="0 0 24 24">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                class="u-svg-content"
+                version="1.1"
+                id="menu-hamburger"
+                viewBox="0 0 16 16"
+                x="0px"
+                y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Calculate-consumption.html">Calculate Consumption</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Get-Token.html">Get Token</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Community.html">Community</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-4-base" href="Developer.html">Developer</a>
-</li></ul>
+            <ul
+              class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1"
+            >
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Calculate-consumption.html"
+                  >Calculate Consumption</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Get-Token.html"
+                  >Get Token</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Community.html"
+                  >Community</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Article.html"
+                  >Article</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-button-style u-nav-link u-text-active-palette-4-base"
+                  href="Developer.html"
+                  >Developer</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div
+              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+            >
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Calculate-consumption.html">Calculate Consumption</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Get-Token.html">Get Token</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Community.html">Community</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Developer.html">Developer</a>
-</li></ul>
+                <ul
+                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                >
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="Calculate-consumption.html"
+                      >Calculate Consumption</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Get-Token.html"
+                      >Get Token</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Community.html"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Article.html"
+                      >Article</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a class="u-button-style u-nav-link" href="Developer.html"
+                      >Developer</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-      </div>
-    </header>
+      </div></header>
+    
     <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-93a2">
       
      <!-- MODAL -->
@@ -135,10 +183,36 @@
         </a>
         </div>
 
-        <a class="fa fa-close" onclick="modalToggle();"></a>
+      <button class="fa fa-close" onclick="modalToggle();">X</button>
     </div>
                 
     <!-- END -->
+      
+    <!-- MODAL no file chosen alert -->
+    <div id="modal2">
+        <div class="content">
+            <h2>Error</h2>
+            <p>No file chosen</p>
+        </div>
+
+      <button class="fa fa-close" onclick="modalToggle2();">X</button>
+    </div>
+                
+    <!-- END -->
+      
+    <!-- MODAL submit success -->
+    <div id="modal3">
+        <div class="content">
+            <h2>Form</h2>
+            <p>Form has been submitted successfully!</p>
+        </div>
+
+      <button class="fa fa-close" onclick="modalToggle3();">X</button>
+    </div>
+                
+    <!-- END -->
+      
+      <!-- Form -->
       <div class="u-clearfix u-sheet u-sheet-1">
         <div
           class="u-align-left u-container-style u-custom-color-3 u-expanded-width u-group u-radius-20 u-shape-round u-group-1"
@@ -156,12 +230,9 @@
             <form>
             <p class="u-text u-text-3">
               Wallet address:
-              <input type="text"
-                id="myAddr"
-                style="width: 240px; color: green"
-                placeholder=""
-              />
+              <label type="text" id="myAddr" style="color:white;font-size: 20px;"></label>
             </p>
+              <br>
             <p class="u-text u-text-white u-text-4">
               I am residing in a
               <select id="Household" style="color: green">
@@ -218,6 +289,7 @@
               </select>
               .
             </p>
+              <br>
             <p class="u-text u-text-body-alt-color u-text-5">
               My household consumes on average
               <input
@@ -230,8 +302,10 @@
                 placeholder="300.1"
                 onkeyup="calc_saved(this.value);"
               />
-              kWh of electricity on .
+              kWh of electricity in 
+              <input type="month" id="month" name="date">
             </p>
+            
             <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
               <div class="u-layout">
                 <div class="u-layout-row">
@@ -311,34 +385,41 @@
               class="u-custom-font u-font-montserrat u-text u-text-white u-text-12"
             >
               <b>Upload your electricity bill</b>
+              <p style= "color:grey; font-size: 17px;">
+              Please wait while file is being processed..
+              </p>
             </h2>
             <p class="u-text u-text-white u-text-13">
-              <input type="file" id="files" choose file />
+              <input type="file" id="files" choose file /><br>
+              <progress style="color:green; border: 1px solid #ebebeb; border-radius:100px;" id="progressbar" min="0" max="1" value="0"/>
+              <textarea id="image-text"></textarea>
             </p>
-            <button
-              class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-font-montserrat u-radius-6 u-text-custom-color-2 u-text-hover-grey-40 u-btn-1"
-              id="submit"
-              >SUBMIT</button>
+            <a class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-font-montserrat u-radius-6 u-text-custom-color-2 u-text-hover-grey-40 u-btn-2"
+              id="buyBtn" >SUBMIT</a>
+            <p class="u-text u-text-14">My token balance:&nbsp;<span id="myTokens">0</span></p>
           </form>
-            <input
-              style="background-color: transparent; border: 0; font-weight: bold; font-size: 20px;"
-              type="number"
-              disabled="disabled"
-              class="u-align-center u-text u-text-white u-text-7"
-              id="buyQty"
-              placeholder="0"
-              value = "1"
-              readonly
-            />
-              
-              <p>My tokens balance: <span id="myTokens"></span></p>
-            <button id="buyBtn" style="text-align: center">Collect Reward</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  <script src="https://dappbuilder.org/js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://dappbuilder.org/js/ethers-5.0.umd.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://dappbuilder.org/eth/tokensaletimeref/js/tokensale.ui.js" type="text/javascript" charset="utf-8"></script>
+            
+    <!-- to collect reward -->
+            <label for="name-d64b"></label>
+            <input type="hidden" id="buyQty" value="1" name="amount" required="required"
+                    style="text-align: center;">
+  <!-- end -->
+            
+<script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>    
+<script
+      src="https://dappbuilder.org/js/jquery-3.6.0.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://dappbuilder.org/js/ethers-5.0.umd.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://dappbuilder.org/eth/tokensaletimeref/js/tokensale.ui.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script> 
   </body>
 </html>
